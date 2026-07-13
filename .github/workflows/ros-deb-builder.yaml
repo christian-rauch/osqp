@@ -1,0 +1,27 @@
+name: ROS Debian Package Builder
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "README.md"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - {ros: jazzy,    deb: noble}
+          - {ros: lyrical,  deb: resolute}
+
+    steps:
+      - uses: jspricke/ros-deb-builder-action@main
+        with:
+          DEB_DISTRO: ${{ matrix.deb }}
+          ROS_DISTRO: ${{ matrix.ros }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SQUASH_HISTORY: true
+          SBUILD_CONF: "$enable_network = 1;"

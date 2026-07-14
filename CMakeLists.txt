@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.18)
 project(osqp)
 
+set(FETCHCONTENT_FULLY_DISCONNECTED OFF)
+
 include(GNUInstallDirs)
 include(CMakeDependentOption)
 include(CMakePackageConfigHelpers)

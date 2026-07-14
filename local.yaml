@@ -1,0 +1,3 @@
+osqp:
+  ubuntu:
+  - ros-jazzy-osqp

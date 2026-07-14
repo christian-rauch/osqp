@@ -1,0 +1,37 @@
+Package: ros-jazzy-osqp-dbgsym
+Package-Type: ddeb
+Architecture: amd64
+Version: 0-2026.07.14.09.37
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: ros-jazzy-osqp
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 214
+Depends: ros-jazzy-osqp (= 0-2026.07.14.09.37)
+Filename: ./ros-jazzy-osqp-dbgsym_0-2026.07.14.09.37_amd64.ddeb
+Size: 174820
+MD5sum: 1a3787709219f7468308890478f83b6b
+SHA1: 61ed3f1253af6275aa6306eb2c7097449c452e2c
+SHA256: 7a609a22103ada7083cefbe5084f854d7636bc9676cc74bd3cdadee1df05a15c
+SHA512: 8f8c31b2eb1efdab9e33f01ce0f6d7a86a9268dbb517b70b182e5ec6cefdc68de41045b664e53218095bcd2523e004cedda7407590ca66ea9c241995498fb964
+Description: debug symbols for ros-jazzy-osqp
+Build-Ids: 20f836e92eb26b891d39ff6427b9258e0eee3b4b
+
+Package: ros-jazzy-osqp
+Architecture: amd64
+Version: 0-2026.07.14.09.37
+Priority: optional
+Section: misc
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 848
+Depends: libc6 (>= 2.38)
+Filename: ./ros-jazzy-osqp_0-2026.07.14.09.37_amd64.deb
+Size: 152908
+MD5sum: 8124dcb0f79f596d4b16409dc1042977
+SHA1: 5ac000603976cbf85ed5a1e7b4828826e3153aae
+SHA256: 46a5b57ae5025c69bb3b7bc3ae06ba5969c36f5f6d29fb01b821855f8534064c
+SHA512: 06bf2b721fbd48cfe6bbbfb5c991271682723d72549a177adfc46207fc77bd526ca24b134f685e8d0dbfe6df2b22cf8dd15c0f63dba85749931f0cbde640292b
+Homepage: https://osqp.org
+Description: The Operator Splitting QP Solver
+

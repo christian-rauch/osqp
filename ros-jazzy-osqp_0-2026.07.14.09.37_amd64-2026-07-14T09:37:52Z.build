@@ -1,0 +1,1625 @@
+sbuild (Debian sbuild) 0.85.10ubuntu0.2 (02 May 2025) on runnervm5mmn9.dtgqkisxqgbepg5izuxpskfqac.dx.internal.cloudapp.net
+
++==============================================================================+
+| ros-jazzy-osqp 0-2026.07.14.09.37 (amd64)    Tue, 14 Jul 2026 09:37:52 +0000 |
++==============================================================================+
+
+Package: ros-jazzy-osqp
+Version: 0-2026.07.14.09.37
+Source Version: 0-2026.07.14.09.37
+Distribution: noble
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+Build Type: binary
+
+Unpacking /home/runner/.cache/sbuild/noble-amd64.tar to /tmp/tmp.sbuild.pYyHmYaZHp...
+I: NOTICE: Log filtering will replace 'sbuild-unshare-dummy-location' with '<<CHROOT>>'
+I: NOTICE: Log filtering will replace 'build/package//resolver-swxyuJ' with '<<RESOLVERDIR>>'
+
++------------------------------------------------------------------------------+
+| Update chroot                                Tue, 14 Jul 2026 09:37:57 +0000 |
++------------------------------------------------------------------------------+
+
+Get:1 file:/build/package//resolver-k1OqBr/apt_archive ./ InRelease
+Ign:1 file:/build/package//resolver-k1OqBr/apt_archive ./ InRelease
+Get:2 file:/build/package//resolver-k1OqBr/apt_archive ./ Release [597 B]
+Get:2 file:/build/package//resolver-k1OqBr/apt_archive ./ Release [597 B]
+Get:3 file:/build/package//resolver-k1OqBr/apt_archive ./ Release.gpg
+Ign:3 file:/build/package//resolver-k1OqBr/apt_archive ./ Release.gpg
+Get:4 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+Get:5 http://packages.ros.org/ros2/ubuntu noble InRelease [4676 B]
+Get:6 http://packages.ros.org/ros2/ubuntu noble/main amd64 Packages [1956 kB]
+Get:7 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [15.0 MB]
+Get:10 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1175 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1401 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1096 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1660 kB]
+Get:14 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [835 kB]
+Fetched 23.7 MB in 3s (6897 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
++------------------------------------------------------------------------------+
+| Fetch source files                           Tue, 14 Jul 2026 09:38:01 +0000 |
++------------------------------------------------------------------------------+
+
+
+Local sources
+-------------
+
+/home/runner/work/osqp/osqp/ros-jazzy-osqp_0-2026.07.14.09.37.dsc exists in /home/runner/work/osqp/osqp; copying to chroot
+I: NOTICE: Log filtering will replace 'build/package//package' with '<<PKGBUILDDIR>>'
+I: NOTICE: Log filtering will replace 'build/package/' with '<<BUILDDIR>>'
+
++------------------------------------------------------------------------------+
+| Install package build dependencies           Tue, 14 Jul 2026 09:38:02 +0000 |
++------------------------------------------------------------------------------+
+
+
+Setup apt archive
+-----------------
+
+Merged Build-Depends: debhelper (>= 9.0.0), cmake, git, build-essential, fakeroot, dumb-init
+Filtered Build-Depends: debhelper (>= 9.0.0), cmake, git, build-essential, fakeroot, dumb-init
+dpkg-deb: building package 'sbuild-build-depends-main-dummy' in '/<<RESOLVERDIR>>/apt_archive/sbuild-build-depends-main-dummy.deb'.
+Ign:1 copy:/<<RESOLVERDIR>>/apt_archive ./ InRelease
+Get:2 copy:/<<RESOLVERDIR>>/apt_archive ./ Release [609 B]
+Ign:3 copy:/<<RESOLVERDIR>>/apt_archive ./ Release.gpg
+Get:4 copy:/<<RESOLVERDIR>>/apt_archive ./ Sources [637 B]
+Get:5 copy:/<<RESOLVERDIR>>/apt_archive ./ Packages [669 B]
+Fetched 1915 B in 0s (0 B/s)
+Reading package lists...
+Get:1 file:/<<BUILDDIR>>/resolver-k1OqBr/apt_archive ./ InRelease
+Ign:1 file:/<<BUILDDIR>>/resolver-k1OqBr/apt_archive ./ InRelease
+Get:2 file:/<<BUILDDIR>>/resolver-k1OqBr/apt_archive ./ Release [597 B]
+Get:2 file:/<<BUILDDIR>>/resolver-k1OqBr/apt_archive ./ Release [597 B]
+Get:3 file:/<<BUILDDIR>>/resolver-k1OqBr/apt_archive ./ Release.gpg
+Ign:3 file:/<<BUILDDIR>>/resolver-k1OqBr/apt_archive ./ Release.gpg
+Reading package lists...
+Hit:1 http://packages.ros.org/ros2/ubuntu noble InRelease
+Reading package lists...
+Reading package lists...
+
+Install main build dependencies (apt-based resolver)
+----------------------------------------------------
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  autoconf automake autopoint autotools-dev bsdextrautils cmake cmake-data
+  debhelper debugedit dh-autoreconf dh-strip-nondeterminism dumb-init dwz
+  fakeroot file gettext gettext-base git git-man groff-base intltool-debian
+  libarchive-zip-perl libarchive13t64 libbrotli1 libcom-err2
+  libcurl3t64-gnutls libcurl4t64 libdebhelper-perl libdw1t64 libelf1t64
+  liberror-perl libexpat1 libfakeroot libfile-stripnondeterminism-perl
+  libgssapi-krb5-2 libicu74 libjsoncpp25 libk5crypto3 libkeyutils1 libkrb5-3
+  libkrb5support0 libldap2 libmagic-mgc libmagic1t64 libncursesw6
+  libnghttp2-14 libpipeline1 libproc2-0 libpsl5t64 librhash0 librtmp1
+  libsasl2-2 libsasl2-modules-db libssh-4 libsub-override-perl libtool
+  libuchardet0 libuv1t64 libxml2 m4 man-db po-debconf procps sensible-utils
+Suggested packages:
+  autoconf-archive gnu-standards autoconf-doc cmake-doc cmake-format
+  elpa-cmake-mode ninja-build dh-make gettext-doc libasprintf-dev
+  libgettextpo-dev git-daemon-run | git-daemon-sysvinit git-doc git-email
+  git-gui gitk gitweb git-cvs git-mediawiki git-svn groff lrzip krb5-doc
+  krb5-user libtool-doc gfortran | fortran95-compiler gcj-jdk m4-doc apparmor
+  less www-browser libmail-box-perl
+Recommended packages:
+  curl | wget | lynx less ssh-client libarchive-cpio-perl krb5-locales
+  libldap-common libgpm2 publicsuffix libsasl2-modules libltdl-dev
+  libmail-sendmail-perl psmisc
+The following NEW packages will be installed:
+  autoconf automake autopoint autotools-dev bsdextrautils cmake cmake-data
+  debhelper debugedit dh-autoreconf dh-strip-nondeterminism dumb-init dwz
+  fakeroot file gettext gettext-base git git-man groff-base intltool-debian
+  libarchive-zip-perl libarchive13t64 libbrotli1 libcom-err2
+  libcurl3t64-gnutls libcurl4t64 libdebhelper-perl libdw1t64 libelf1t64
+  liberror-perl libexpat1 libfakeroot libfile-stripnondeterminism-perl
+  libgssapi-krb5-2 libicu74 libjsoncpp25 libk5crypto3 libkeyutils1 libkrb5-3
+  libkrb5support0 libldap2 libmagic-mgc libmagic1t64 libncursesw6
+  libnghttp2-14 libpipeline1 libproc2-0 libpsl5t64 librhash0 librtmp1
+  libsasl2-2 libsasl2-modules-db libssh-4 libsub-override-perl libtool
+  libuchardet0 libuv1t64 libxml2 m4 man-db po-debconf procps
+  sbuild-build-depends-main-dummy sensible-utils
+0 upgraded, 65 newly installed, 0 to remove and 0 not upgraded.
+Need to get 41.3 MB of archives.
+After this operation, 153 MB of additional disk space will be used.
+Get:1 copy:/<<RESOLVERDIR>>/apt_archive ./ sbuild-build-depends-main-dummy 0.invalid.0 [680 B]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcom-err2 amd64 1.47.0-2.4~exp1ubuntu4.1 [23.0 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libncursesw6 amd64 6.4+20240113-1ubuntu2.1 [148 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libproc2-0 amd64 2:4.0.4-4ubuntu3.2 [59.5 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 procps amd64 2:4.0.4-4ubuntu3.2 [707 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 sensible-utils all 0.0.22 [22.5 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libelf1t64 amd64 0.190-1.1ubuntu0.1 [57.8 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libexpat1 amd64 2.6.1-2ubuntu0.4 [88.2 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libkrb5support0 amd64 1.20.1-6ubuntu2.6 [34.4 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libk5crypto3 amd64 1.20.1-6ubuntu2.6 [82.0 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble/main amd64 libkeyutils1 amd64 1.6.3-3build1 [9490 B]
+Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libkrb5-3 amd64 1.20.1-6ubuntu2.6 [348 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgssapi-krb5-2 amd64 1.20.1-6ubuntu2.6 [143 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libicu74 amd64 74.2-1ubuntu3.1 [10.9 MB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libxml2 amd64 2.9.14+dfsg-1.3ubuntu3.8 [764 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bsdextrautils amd64 2.39.3-9ubuntu6.5 [73.7 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble/main amd64 libmagic-mgc amd64 1:5.45-3build1 [307 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble/main amd64 libmagic1t64 amd64 1:5.45-3build1 [87.2 kB]
+Get:19 http://archive.ubuntu.com/ubuntu noble/main amd64 file amd64 1:5.45-3build1 [22.0 kB]
+Get:20 http://archive.ubuntu.com/ubuntu noble/main amd64 gettext-base amd64 0.21-14ubuntu2 [38.4 kB]
+Get:21 http://archive.ubuntu.com/ubuntu noble/main amd64 libuchardet0 amd64 0.0.8-1build1 [75.3 kB]
+Get:22 http://archive.ubuntu.com/ubuntu noble/main amd64 groff-base amd64 1.23.0-3build2 [1020 kB]
+Get:23 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libnghttp2-14 amd64 1.59.0-1ubuntu0.4 [74.6 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble/main amd64 libpipeline1 amd64 1.5.7-2 [23.6 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble/main amd64 libpsl5t64 amd64 0.21.2-1.1build1 [57.1 kB]
+Get:26 http://archive.ubuntu.com/ubuntu noble/main amd64 libuv1t64 amd64 1.48.0-1.1build1 [97.3 kB]
+Get:27 http://archive.ubuntu.com/ubuntu noble/main amd64 man-db amd64 2.12.0-4build2 [1237 kB]
+Get:28 http://archive.ubuntu.com/ubuntu noble/main amd64 m4 amd64 1.4.19-4build1 [244 kB]
+Get:29 http://archive.ubuntu.com/ubuntu noble/main amd64 autoconf all 2.71-3 [339 kB]
+Get:30 http://archive.ubuntu.com/ubuntu noble/main amd64 autotools-dev all 20220109.1 [44.9 kB]
+Get:31 http://archive.ubuntu.com/ubuntu noble/main amd64 automake all 1:1.16.5-1.3ubuntu1 [558 kB]
+Get:32 http://archive.ubuntu.com/ubuntu noble/main amd64 autopoint all 0.21-14ubuntu2 [422 kB]
+Get:33 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libarchive13t64 amd64 3.7.2-2ubuntu0.7 [382 kB]
+Get:34 http://archive.ubuntu.com/ubuntu noble/main amd64 libbrotli1 amd64 1.1.0-2build2 [331 kB]
+Get:35 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsasl2-modules-db amd64 2.1.28+dfsg1-5ubuntu3.1 [20.4 kB]
+Get:36 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsasl2-2 amd64 2.1.28+dfsg1-5ubuntu3.1 [53.2 kB]
+Get:37 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libldap2 amd64 2.6.10+dfsg-0ubuntu0.24.04.1 [198 kB]
+Get:38 http://archive.ubuntu.com/ubuntu noble/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2build7 [56.3 kB]
+Get:39 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libssh-4 amd64 0.10.6-2ubuntu0.4 [190 kB]
+Get:40 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4t64 amd64 8.5.0-2ubuntu10.11 [342 kB]
+Get:41 http://archive.ubuntu.com/ubuntu noble/main amd64 libjsoncpp25 amd64 1.9.5-6build1 [82.8 kB]
+Get:42 http://archive.ubuntu.com/ubuntu noble/main amd64 librhash0 amd64 1.4.3-3build1 [129 kB]
+Get:43 http://archive.ubuntu.com/ubuntu noble/main amd64 cmake-data all 3.28.3-1build7 [2155 kB]
+Get:44 http://archive.ubuntu.com/ubuntu noble/main amd64 cmake amd64 3.28.3-1build7 [11.2 MB]
+Get:45 http://archive.ubuntu.com/ubuntu noble/main amd64 libdebhelper-perl all 13.14.1ubuntu5 [89.8 kB]
+Get:46 http://archive.ubuntu.com/ubuntu noble/main amd64 libtool all 2.4.7-7build1 [166 kB]
+Get:47 http://archive.ubuntu.com/ubuntu noble/main amd64 dh-autoreconf all 20 [16.1 kB]
+Get:48 http://archive.ubuntu.com/ubuntu noble/main amd64 libarchive-zip-perl all 1.68-1 [90.2 kB]
+Get:49 http://archive.ubuntu.com/ubuntu noble/main amd64 libsub-override-perl all 0.10-1 [10.0 kB]
+Get:50 http://archive.ubuntu.com/ubuntu noble/main amd64 libfile-stripnondeterminism-perl all 1.13.1-1 [18.1 kB]
+Get:51 http://archive.ubuntu.com/ubuntu noble/main amd64 dh-strip-nondeterminism all 1.13.1-1 [5362 B]
+Get:52 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdw1t64 amd64 0.190-1.1ubuntu0.1 [261 kB]
+Get:53 http://archive.ubuntu.com/ubuntu noble/main amd64 debugedit amd64 1:5.0-5build2 [46.1 kB]
+Get:54 http://archive.ubuntu.com/ubuntu noble/main amd64 dwz amd64 0.15-1build6 [115 kB]
+Get:55 http://archive.ubuntu.com/ubuntu noble/main amd64 gettext amd64 0.21-14ubuntu2 [864 kB]
+Get:56 http://archive.ubuntu.com/ubuntu noble/main amd64 intltool-debian all 0.35.0+20060710.6 [23.2 kB]
+Get:57 http://archive.ubuntu.com/ubuntu noble/main amd64 po-debconf all 1.0.21+nmu1 [233 kB]
+Get:58 http://archive.ubuntu.com/ubuntu noble/main amd64 debhelper all 13.14.1ubuntu5 [869 kB]
+Get:59 http://archive.ubuntu.com/ubuntu noble/main amd64 libfakeroot amd64 1.33-1 [32.4 kB]
+Get:60 http://archive.ubuntu.com/ubuntu noble/main amd64 fakeroot amd64 1.33-1 [67.2 kB]
+Get:61 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl3t64-gnutls amd64 8.5.0-2ubuntu10.11 [334 kB]
+Get:62 http://archive.ubuntu.com/ubuntu noble/main amd64 liberror-perl all 0.17029-2 [25.6 kB]
+Get:63 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 git-man all 1:2.43.0-1ubuntu7.3 [1100 kB]
+Get:64 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 git amd64 1:2.43.0-1ubuntu7.3 [3680 kB]
+Get:65 http://archive.ubuntu.com/ubuntu noble/universe amd64 dumb-init amd64 1.2.5-3 [13.6 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 41.3 MB in 5s (9143 kB/s)
+Selecting previously unselected package libcom-err2:amd64.
+(Reading database ... 10027 files and directories currently installed.)
+Preparing to unpack .../00-libcom-err2_1.47.0-2.4~exp1ubuntu4.1_amd64.deb ...
+Unpacking libcom-err2:amd64 (1.47.0-2.4~exp1ubuntu4.1) ...
+Selecting previously unselected package libncursesw6:amd64.
+Preparing to unpack .../01-libncursesw6_6.4+20240113-1ubuntu2.1_amd64.deb ...
+Unpacking libncursesw6:amd64 (6.4+20240113-1ubuntu2.1) ...
+Selecting previously unselected package libproc2-0:amd64.
+Preparing to unpack .../02-libproc2-0_2%3a4.0.4-4ubuntu3.2_amd64.deb ...
+Unpacking libproc2-0:amd64 (2:4.0.4-4ubuntu3.2) ...
+Selecting previously unselected package procps.
+Preparing to unpack .../03-procps_2%3a4.0.4-4ubuntu3.2_amd64.deb ...
+Unpacking procps (2:4.0.4-4ubuntu3.2) ...
+Selecting previously unselected package sensible-utils.
+Preparing to unpack .../04-sensible-utils_0.0.22_all.deb ...
+Unpacking sensible-utils (0.0.22) ...
+Selecting previously unselected package libelf1t64:amd64.
+Preparing to unpack .../05-libelf1t64_0.190-1.1ubuntu0.1_amd64.deb ...
+Unpacking libelf1t64:amd64 (0.190-1.1ubuntu0.1) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../06-libexpat1_2.6.1-2ubuntu0.4_amd64.deb ...
+Unpacking libexpat1:amd64 (2.6.1-2ubuntu0.4) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../07-libkrb5support0_1.20.1-6ubuntu2.6_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.20.1-6ubuntu2.6) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../08-libk5crypto3_1.20.1-6ubuntu2.6_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.20.1-6ubuntu2.6) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../09-libkeyutils1_1.6.3-3build1_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.6.3-3build1) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../10-libkrb5-3_1.20.1-6ubuntu2.6_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.20.1-6ubuntu2.6) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../11-libgssapi-krb5-2_1.20.1-6ubuntu2.6_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.20.1-6ubuntu2.6) ...
+Selecting previously unselected package libicu74:amd64.
+Preparing to unpack .../12-libicu74_74.2-1ubuntu3.1_amd64.deb ...
+Unpacking libicu74:amd64 (74.2-1ubuntu3.1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../13-libxml2_2.9.14+dfsg-1.3ubuntu3.8_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.14+dfsg-1.3ubuntu3.8) ...
+Selecting previously unselected package bsdextrautils.
+Preparing to unpack .../14-bsdextrautils_2.39.3-9ubuntu6.5_amd64.deb ...
+Unpacking bsdextrautils (2.39.3-9ubuntu6.5) ...
+Selecting previously unselected package libmagic-mgc.
+Preparing to unpack .../15-libmagic-mgc_1%3a5.45-3build1_amd64.deb ...
+Unpacking libmagic-mgc (1:5.45-3build1) ...
+Selecting previously unselected package libmagic1t64:amd64.
+Preparing to unpack .../16-libmagic1t64_1%3a5.45-3build1_amd64.deb ...
+Unpacking libmagic1t64:amd64 (1:5.45-3build1) ...
+Selecting previously unselected package file.
+Preparing to unpack .../17-file_1%3a5.45-3build1_amd64.deb ...
+Unpacking file (1:5.45-3build1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../18-gettext-base_0.21-14ubuntu2_amd64.deb ...
+Unpacking gettext-base (0.21-14ubuntu2) ...
+Selecting previously unselected package libuchardet0:amd64.
+Preparing to unpack .../19-libuchardet0_0.0.8-1build1_amd64.deb ...
+Unpacking libuchardet0:amd64 (0.0.8-1build1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../20-groff-base_1.23.0-3build2_amd64.deb ...
+Unpacking groff-base (1.23.0-3build2) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../21-libnghttp2-14_1.59.0-1ubuntu0.4_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.59.0-1ubuntu0.4) ...
+Selecting previously unselected package libpipeline1:amd64.
+Preparing to unpack .../22-libpipeline1_1.5.7-2_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.5.7-2) ...
+Selecting previously unselected package libpsl5t64:amd64.
+Preparing to unpack .../23-libpsl5t64_0.21.2-1.1build1_amd64.deb ...
+Unpacking libpsl5t64:amd64 (0.21.2-1.1build1) ...
+Selecting previously unselected package libuv1t64:amd64.
+Preparing to unpack .../24-libuv1t64_1.48.0-1.1build1_amd64.deb ...
+Unpacking libuv1t64:amd64 (1.48.0-1.1build1) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../25-man-db_2.12.0-4build2_amd64.deb ...
+Unpacking man-db (2.12.0-4build2) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../26-m4_1.4.19-4build1_amd64.deb ...
+Unpacking m4 (1.4.19-4build1) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../27-autoconf_2.71-3_all.deb ...
+Unpacking autoconf (2.71-3) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../28-autotools-dev_20220109.1_all.deb ...
+Unpacking autotools-dev (20220109.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../29-automake_1%3a1.16.5-1.3ubuntu1_all.deb ...
+Unpacking automake (1:1.16.5-1.3ubuntu1) ...
+Selecting previously unselected package autopoint.
+Preparing to unpack .../30-autopoint_0.21-14ubuntu2_all.deb ...
+Unpacking autopoint (0.21-14ubuntu2) ...
+Selecting previously unselected package libarchive13t64:amd64.
+Preparing to unpack .../31-libarchive13t64_3.7.2-2ubuntu0.7_amd64.deb ...
+Unpacking libarchive13t64:amd64 (3.7.2-2ubuntu0.7) ...
+Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../32-libbrotli1_1.1.0-2build2_amd64.deb ...
+Unpacking libbrotli1:amd64 (1.1.0-2build2) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../33-libsasl2-modules-db_2.1.28+dfsg1-5ubuntu3.1_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../34-libsasl2-2_2.1.28+dfsg1-5ubuntu3.1_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...
+Selecting previously unselected package libldap2:amd64.
+Preparing to unpack .../35-libldap2_2.6.10+dfsg-0ubuntu0.24.04.1_amd64.deb ...
+Unpacking libldap2:amd64 (2.6.10+dfsg-0ubuntu0.24.04.1) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../36-librtmp1_2.4+20151223.gitfa8646d.1-2build7_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build7) ...
+Selecting previously unselected package libssh-4:amd64.
+Preparing to unpack .../37-libssh-4_0.10.6-2ubuntu0.4_amd64.deb ...
+Unpacking libssh-4:amd64 (0.10.6-2ubuntu0.4) ...
+Selecting previously unselected package libcurl4t64:amd64.
+Preparing to unpack .../38-libcurl4t64_8.5.0-2ubuntu10.11_amd64.deb ...
+Unpacking libcurl4t64:amd64 (8.5.0-2ubuntu10.11) ...
+Selecting previously unselected package libjsoncpp25:amd64.
+Preparing to unpack .../39-libjsoncpp25_1.9.5-6build1_amd64.deb ...
+Unpacking libjsoncpp25:amd64 (1.9.5-6build1) ...
+Selecting previously unselected package librhash0:amd64.
+Preparing to unpack .../40-librhash0_1.4.3-3build1_amd64.deb ...
+Unpacking librhash0:amd64 (1.4.3-3build1) ...
+Selecting previously unselected package cmake-data.
+Preparing to unpack .../41-cmake-data_3.28.3-1build7_all.deb ...
+Unpacking cmake-data (3.28.3-1build7) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../42-cmake_3.28.3-1build7_amd64.deb ...
+Unpacking cmake (3.28.3-1build7) ...
+Selecting previously unselected package libdebhelper-perl.
+Preparing to unpack .../43-libdebhelper-perl_13.14.1ubuntu5_all.deb ...
+Unpacking libdebhelper-perl (13.14.1ubuntu5) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../44-libtool_2.4.7-7build1_all.deb ...
+Unpacking libtool (2.4.7-7build1) ...
+Selecting previously unselected package dh-autoreconf.
+Preparing to unpack .../45-dh-autoreconf_20_all.deb ...
+Unpacking dh-autoreconf (20) ...
+Selecting previously unselected package libarchive-zip-perl.
+Preparing to unpack .../46-libarchive-zip-perl_1.68-1_all.deb ...
+Unpacking libarchive-zip-perl (1.68-1) ...
+Selecting previously unselected package libsub-override-perl.
+Preparing to unpack .../47-libsub-override-perl_0.10-1_all.deb ...
+Unpacking libsub-override-perl (0.10-1) ...
+Selecting previously unselected package libfile-stripnondeterminism-perl.
+Preparing to unpack .../48-libfile-stripnondeterminism-perl_1.13.1-1_all.deb ...
+Unpacking libfile-stripnondeterminism-perl (1.13.1-1) ...
+Selecting previously unselected package dh-strip-nondeterminism.
+Preparing to unpack .../49-dh-strip-nondeterminism_1.13.1-1_all.deb ...
+Unpacking dh-strip-nondeterminism (1.13.1-1) ...
+Selecting previously unselected package libdw1t64:amd64.
+Preparing to unpack .../50-libdw1t64_0.190-1.1ubuntu0.1_amd64.deb ...
+Unpacking libdw1t64:amd64 (0.190-1.1ubuntu0.1) ...
+Selecting previously unselected package debugedit.
+Preparing to unpack .../51-debugedit_1%3a5.0-5build2_amd64.deb ...
+Unpacking debugedit (1:5.0-5build2) ...
+Selecting previously unselected package dwz.
+Preparing to unpack .../52-dwz_0.15-1build6_amd64.deb ...
+Unpacking dwz (0.15-1build6) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../53-gettext_0.21-14ubuntu2_amd64.deb ...
+Unpacking gettext (0.21-14ubuntu2) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../54-intltool-debian_0.35.0+20060710.6_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.6) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../55-po-debconf_1.0.21+nmu1_all.deb ...
+Unpacking po-debconf (1.0.21+nmu1) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../56-debhelper_13.14.1ubuntu5_all.deb ...
+Unpacking debhelper (13.14.1ubuntu5) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../57-libfakeroot_1.33-1_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.33-1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../58-fakeroot_1.33-1_amd64.deb ...
+Unpacking fakeroot (1.33-1) ...
+Selecting previously unselected package libcurl3t64-gnutls:amd64.
+Preparing to unpack .../59-libcurl3t64-gnutls_8.5.0-2ubuntu10.11_amd64.deb ...
+Unpacking libcurl3t64-gnutls:amd64 (8.5.0-2ubuntu10.11) ...
+Selecting previously unselected package liberror-perl.
+Preparing to unpack .../60-liberror-perl_0.17029-2_all.deb ...
+Unpacking liberror-perl (0.17029-2) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../61-git-man_1%3a2.43.0-1ubuntu7.3_all.deb ...
+Unpacking git-man (1:2.43.0-1ubuntu7.3) ...
+Selecting previously unselected package git.
+Preparing to unpack .../62-git_1%3a2.43.0-1ubuntu7.3_amd64.deb ...
+Unpacking git (1:2.43.0-1ubuntu7.3) ...
+Selecting previously unselected package dumb-init.
+Preparing to unpack .../63-dumb-init_1.2.5-3_amd64.deb ...
+Unpacking dumb-init (1.2.5-3) ...
+Selecting previously unselected package sbuild-build-depends-main-dummy.
+Preparing to unpack .../64-sbuild-build-depends-main-dummy_0.invalid.0_amd64.deb ...
+Unpacking sbuild-build-depends-main-dummy (0.invalid.0) ...
+Setting up libexpat1:amd64 (2.6.1-2ubuntu0.4) ...
+Setting up dumb-init (1.2.5-3) ...
+Setting up libpipeline1:amd64 (1.5.7-2) ...
+Setting up libkeyutils1:amd64 (1.6.3-3build1) ...
+Setting up bsdextrautils (2.39.3-9ubuntu6.5) ...
+Setting up libmagic-mgc (1:5.45-3build1) ...
+Setting up libarchive-zip-perl (1.68-1) ...
+Setting up libdebhelper-perl (13.14.1ubuntu5) ...
+Setting up libbrotli1:amd64 (1.1.0-2build2) ...
+Setting up libuv1t64:amd64 (1.48.0-1.1build1) ...
+Setting up libmagic1t64:amd64 (1:5.45-3build1) ...
+Setting up libpsl5t64:amd64 (0.21.2-1.1build1) ...
+Setting up libnghttp2-14:amd64 (1.59.0-1ubuntu0.4) ...
+Setting up gettext-base (0.21-14ubuntu2) ...
+Setting up m4 (1.4.19-4build1) ...
+Setting up libcom-err2:amd64 (1.47.0-2.4~exp1ubuntu4.1) ...
+Setting up file (1:5.45-3build1) ...
+Setting up libfakeroot:amd64 (1.33-1) ...
+Setting up libelf1t64:amd64 (0.190-1.1ubuntu0.1) ...
+Setting up libkrb5support0:amd64 (1.20.1-6ubuntu2.6) ...
+Setting up libdw1t64:amd64 (0.190-1.1ubuntu0.1) ...
+Setting up libsasl2-modules-db:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...
+Setting up fakeroot (1.33-1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up liberror-perl (0.17029-2) ...
+Setting up autotools-dev (20220109.1) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build7) ...
+Setting up libproc2-0:amd64 (2:4.0.4-4ubuntu3.2) ...
+Setting up autopoint (0.21-14ubuntu2) ...
+Setting up libjsoncpp25:amd64 (1.9.5-6build1) ...
+Setting up libncursesw6:amd64 (6.4+20240113-1ubuntu2.1) ...
+Setting up libk5crypto3:amd64 (1.20.1-6ubuntu2.6) ...
+Setting up libsasl2-2:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...
+Setting up autoconf (2.71-3) ...
+Setting up libicu74:amd64 (74.2-1ubuntu3.1) ...
+Setting up dwz (0.15-1build6) ...
+Setting up sensible-utils (0.0.22) ...
+Setting up librhash0:amd64 (1.4.3-3build1) ...
+Setting up libuchardet0:amd64 (0.0.8-1build1) ...
+Setting up procps (2:4.0.4-4ubuntu3.2) ...
+Setting up debugedit (1:5.0-5build2) ...
+Setting up libsub-override-perl (0.10-1) ...
+Setting up git-man (1:2.43.0-1ubuntu7.3) ...
+Setting up cmake-data (3.28.3-1build7) ...
+Setting up libkrb5-3:amd64 (1.20.1-6ubuntu2.6) ...
+Setting up libxml2:amd64 (2.9.14+dfsg-1.3ubuntu3.8) ...
+Setting up libldap2:amd64 (2.6.10+dfsg-0ubuntu0.24.04.1) ...
+Setting up automake (1:1.16.5-1.3ubuntu1) ...
+update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Setting up libfile-stripnondeterminism-perl (1.13.1-1) ...
+Setting up gettext (0.21-14ubuntu2) ...
+Setting up libtool (2.4.7-7build1) ...
+Setting up intltool-debian (0.35.0+20060710.6) ...
+Setting up dh-autoreconf (20) ...
+Setting up libgssapi-krb5-2:amd64 (1.20.1-6ubuntu2.6) ...
+Setting up libssh-4:amd64 (0.10.6-2ubuntu0.4) ...
+Setting up dh-strip-nondeterminism (1.13.1-1) ...
+Setting up groff-base (1.23.0-3build2) ...
+Setting up libarchive13t64:amd64 (3.7.2-2ubuntu0.7) ...
+Setting up libcurl4t64:amd64 (8.5.0-2ubuntu10.11) ...
+Setting up po-debconf (1.0.21+nmu1) ...
+Setting up libcurl3t64-gnutls:amd64 (8.5.0-2ubuntu10.11) ...
+Setting up man-db (2.12.0-4build2) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up git (1:2.43.0-1ubuntu7.3) ...
+Setting up cmake (3.28.3-1build7) ...
+Setting up debhelper (13.14.1ubuntu5) ...
+Setting up sbuild-build-depends-main-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+
++------------------------------------------------------------------------------+
+| Check architectures                          Tue, 14 Jul 2026 09:38:13 +0000 |
++------------------------------------------------------------------------------+
+
+Arch check ok (amd64 included in any)
+
++------------------------------------------------------------------------------+
+| Build environment                            Tue, 14 Jul 2026 09:38:13 +0000 |
++------------------------------------------------------------------------------+
+
+Kernel: Linux 6.17.0-1018-azure #18~24.04.1-Ubuntu SMP Thu May 28 16:39:11 UTC 2026 amd64 (x86_64)
+Toolchain package versions: binutils_2.42-4ubuntu2.10 dpkg-dev_1.22.6ubuntu6.6 g++-13_13.3.0-6ubuntu2~24.04.1 gcc-13_13.3.0-6ubuntu2~24.04.1 libc6-dev_2.39-0ubuntu8.7 libstdc++-13-dev_13.3.0-6ubuntu2~24.04.1 libstdc++6_14.2.0-4ubuntu2~24.04.1 linux-libc-dev_6.8.0-134.134
+Package versions: apt_2.8.3 autoconf_2.71-3 automake_1:1.16.5-1.3ubuntu1 autopoint_0.21-14ubuntu2 autotools-dev_20220109.1 base-files_13ubuntu10.4 base-passwd_3.6.3build1 bash_5.2.21-2ubuntu4 binutils_2.42-4ubuntu2.10 binutils-common_2.42-4ubuntu2.10 binutils-x86-64-linux-gnu_2.42-4ubuntu2.10 bsdextrautils_2.39.3-9ubuntu6.5 bsdutils_1:2.39.3-9ubuntu6.5 build-essential_12.10ubuntu1 bzip2_1.0.8-5.1build0.1 ca-certificates_20260601~24.04.1 ccache_4.9.1-1 cmake_3.28.3-1build7 cmake-data_3.28.3-1build7 coreutils_9.4-3ubuntu6.2 cpp_4:13.2.0-7ubuntu1 cpp-13_13.3.0-6ubuntu2~24.04.1 cpp-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04.1 cpp-x86-64-linux-gnu_4:13.2.0-7ubuntu1 dash_0.5.12-6ubuntu5 debconf_1.5.86ubuntu1 debhelper_13.14.1ubuntu5 debianutils_5.17build1 debugedit_1:5.0-5build2 dh-autoreconf_20 dh-strip-nondeterminism_1.13.1-1 diffutils_1:3.10-1build1 dpkg_1.22.6ubuntu6.6 dpkg-dev_1.22.6ubuntu6.6 dumb-init_1.2.5-3 dwz_0.15-1build6 fakeroot_1.33-1 file_1:5.45-3build1 findutils_4.9.0-5build1 g++_4:13.2.0-7ubuntu1 g++-13_13.3.0-6ubuntu2~24.04.1 g++-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04.1 g++-x86-64-linux-gnu_4:13.2.0-7ubuntu1 gcc_4:13.2.0-7ubuntu1 gcc-13_13.3.0-6ubuntu2~24.04.1 gcc-13-base_13.3.0-6ubuntu2~24.04.1 gcc-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04.1 gcc-14-base_14.2.0-4ubuntu2~24.04.1 gcc-x86-64-linux-gnu_4:13.2.0-7ubuntu1 gettext_0.21-14ubuntu2 gettext-base_0.21-14ubuntu2 git_1:2.43.0-1ubuntu7.3 git-man_1:2.43.0-1ubuntu7.3 gpgv_2.4.4-2ubuntu17.4 grep_3.11-4build1 groff-base_1.23.0-3build2 gzip_1.12-1ubuntu3.2 hostname_3.23+nmu2ubuntu2 init-system-helpers_1.66ubuntu1 intltool-debian_0.35.0+20060710.6 libacl1_2.3.2-1build1.1 libapt-pkg6.0t64_2.8.3 libarchive-zip-perl_1.68-1 libarchive13t64_3.7.2-2ubuntu0.7 libasan8_14.2.0-4ubuntu2~24.04.1 libassuan0_2.5.6-1build1 libatomic1_14.2.0-4ubuntu2~24.04.1 libattr1_1:2.5.2-1build1.1 libaudit-common_1:3.1.2-2.1build1.1 libaudit1_1:3.1.2-2.1build1.1 libbinutils_2.42-4ubuntu2.10 libblkid1_2.39.3-9ubuntu6.5 libbrotli1_1.1.0-2build2 libbz2-1.0_1.0.8-5.1build0.1 libc-bin_2.39-0ubuntu8.7 libc-dev-bin_2.39-0ubuntu8.7 libc6_2.39-0ubuntu8.7 libc6-dev_2.39-0ubuntu8.7 libcap-ng0_0.8.4-2build2 libcap2_1:2.66-5ubuntu2.4 libcc1-0_14.2.0-4ubuntu2~24.04.1 libcom-err2_1.47.0-2.4~exp1ubuntu4.1 libcrypt-dev_1:4.4.36-4build1 libcrypt1_1:4.4.36-4build1 libctf-nobfd0_2.42-4ubuntu2.10 libctf0_2.42-4ubuntu2.10 libcurl3t64-gnutls_8.5.0-2ubuntu10.11 libcurl4t64_8.5.0-2ubuntu10.11 libdb5.3t64_5.3.28+dfsg2-7 libdebconfclient0_0.271ubuntu3 libdebhelper-perl_13.14.1ubuntu5 libdpkg-perl_1.22.6ubuntu6.6 libdw1t64_0.190-1.1ubuntu0.1 libelf1t64_0.190-1.1ubuntu0.1 liberror-perl_0.17029-2 libexpat1_2.6.1-2ubuntu0.4 libfakeroot_1.33-1 libffi8_3.4.6-1build1 libfile-stripnondeterminism-perl_1.13.1-1 libgcc-13-dev_13.3.0-6ubuntu2~24.04.1 libgcc-s1_14.2.0-4ubuntu2~24.04.1 libgcrypt20_1.10.3-2ubuntu0.1 libgdbm-compat4t64_1.23-5.1build1 libgdbm6t64_1.23-5.1build1 libgmp10_2:6.3.0+dfsg-2ubuntu6.1 libgnutls30t64_3.8.3-1.1ubuntu3.6 libgomp1_14.2.0-4ubuntu2~24.04.1 libgpg-error0_1.47-3build2.1 libgprofng0_2.42-4ubuntu2.10 libgssapi-krb5-2_1.20.1-6ubuntu2.6 libhiredis1.1.0_1.2.0-6ubuntu3 libhogweed6t64_3.9.1-2.2build1.1 libhwasan0_14.2.0-4ubuntu2~24.04.1 libicu74_74.2-1ubuntu3.1 libidn2-0_2.3.7-2build1.1 libisl23_0.26-3build1.1 libitm1_14.2.0-4ubuntu2~24.04.1 libjansson4_2.14-2build2 libjsoncpp25_1.9.5-6build1 libk5crypto3_1.20.1-6ubuntu2.6 libkeyutils1_1.6.3-3build1 libkrb5-3_1.20.1-6ubuntu2.6 libkrb5support0_1.20.1-6ubuntu2.6 libldap2_2.6.10+dfsg-0ubuntu0.24.04.1 liblsan0_14.2.0-4ubuntu2~24.04.1 liblz4-1_1.9.4-1build1.1 liblzma5_5.6.1+really5.4.5-1ubuntu0.3 libmagic-mgc_1:5.45-3build1 libmagic1t64_1:5.45-3build1 libmd0_1.1.0-2build1.1 libmount1_2.39.3-9ubuntu6.5 libmpc3_1.3.1-1build1.1 libmpfr6_4.2.1-1build1.1 libncursesw6_6.4+20240113-1ubuntu2.1 libnettle8t64_3.9.1-2.2build1.1 libnghttp2-14_1.59.0-1ubuntu0.4 libnpth0t64_1.6-3.1build1 libp11-kit0_0.25.3-4ubuntu2.1 libpam-modules_1.5.3-5ubuntu5.5 libpam-modules-bin_1.5.3-5ubuntu5.5 libpam-runtime_1.5.3-5ubuntu5.5 libpam0g_1.5.3-5ubuntu5.5 libpcre2-8-0_10.42-4ubuntu2.1 libperl5.38t64_5.38.2-3.2ubuntu0.3 libpipeline1_1.5.7-2 libproc2-0_2:4.0.4-4ubuntu3.2 libpsl5t64_0.21.2-1.1build1 libquadmath0_14.2.0-4ubuntu2~24.04.1 librhash0_1.4.3-3build1 librtmp1_2.4+20151223.gitfa8646d.1-2build7 libsasl2-2_2.1.28+dfsg1-5ubuntu3.1 libsasl2-modules-db_2.1.28+dfsg1-5ubuntu3.1 libseccomp2_2.5.5-1ubuntu3.1 libselinux1_3.5-2ubuntu2.1 libsframe1_2.42-4ubuntu2.10 libsmartcols1_2.39.3-9ubuntu6.5 libssh-4_0.10.6-2ubuntu0.4 libssl3t64_3.0.13-0ubuntu3.11 libstdc++-13-dev_13.3.0-6ubuntu2~24.04.1 libstdc++6_14.2.0-4ubuntu2~24.04.1 libsub-override-perl_0.10-1 libsystemd0_255.4-1ubuntu8.16 libtasn1-6_4.19.0-3ubuntu0.24.04.2 libtinfo6_6.4+20240113-1ubuntu2.1 libtool_2.4.7-7build1 libtsan2_14.2.0-4ubuntu2~24.04.1 libubsan1_14.2.0-4ubuntu2~24.04.1 libuchardet0_0.0.8-1build1 libudev1_255.4-1ubuntu8.16 libunistring5_1.1-2build1.1 libuuid1_2.39.3-9ubuntu6.5 libuv1t64_1.48.0-1.1build1 libxml2_2.9.14+dfsg-1.3ubuntu3.8 libxxhash0_0.8.2-2build1 libzstd1_1.5.5+dfsg2-2build1.1 linux-libc-dev_6.8.0-134.134 login_1:4.13+dfsg1-4ubuntu3.2 lto-disabled-list_47 m4_1.4.19-4build1 make_4.3-4.1build2 man-db_2.12.0-4build2 mawk_1.3.4.20240123-1build1 ncurses-base_6.4+20240113-1ubuntu2.1 ncurses-bin_6.4+20240113-1ubuntu2.1 openssl_3.0.13-0ubuntu3.11 patch_2.7.6-7build3 perl_5.38.2-3.2ubuntu0.3 perl-base_5.38.2-3.2ubuntu0.3 perl-modules-5.38_5.38.2-3.2ubuntu0.3 po-debconf_1.0.21+nmu1 procps_2:4.0.4-4ubuntu3.2 rpcsvc-proto_1.4.2-0ubuntu7 sbuild-build-depends-main-dummy_0.invalid.0 sed_4.9-2ubuntu0.24.04.1 sensible-utils_0.0.22 sysvinit-utils_3.08-6ubuntu3 tar_1.35+dfsg-3ubuntu0.2 ubuntu-keyring_2023.11.28.1 util-linux_2.39.3-9ubuntu6.5 xz-utils_5.6.1+really5.4.5-1ubuntu0.3 zlib1g_1:1.3.dfsg-3.1ubuntu2.1
+
++------------------------------------------------------------------------------+
+| Build                                        Tue, 14 Jul 2026 09:38:13 +0000 |
++------------------------------------------------------------------------------+
+
+
+Unpack source
+-------------
+
+Format: 1.0
+Source: ros-jazzy-osqp
+Binary: ros-jazzy-osqp
+Architecture: any
+Version: 0-2026.07.14.09.37
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Homepage: https://osqp.org
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9.0.0), cmake, git
+Package-List:
+ ros-jazzy-osqp deb misc optional arch=any
+Checksums-Sha1:
+ e22b0542a9b0d973934d537948a338ad308e992d 7775847 ros-jazzy-osqp_0-2026.07.14.09.37.tar.gz
+Checksums-Sha256:
+ b67c345b2e5a8dfb128efa6e174217c76dea0405489e4d49bede0dc2284038b6 7775847 ros-jazzy-osqp_0-2026.07.14.09.37.tar.gz
+Files:
+ bcf68059ad2801ea11d416e285cd6d13 7775847 ros-jazzy-osqp_0-2026.07.14.09.37.tar.gz
+
+dpkg-source: warning: extracting unsigned source package (ros-jazzy-osqp_0-2026.07.14.09.37.dsc)
+dpkg-source: info: extracting ros-jazzy-osqp in /<<BUILDDIR>>package
+dpkg-source: info: unpacking ros-jazzy-osqp_0-2026.07.14.09.37.tar.gz
+
+Check disk space
+----------------
+
+Sufficient free space for build
+
+User Environment
+----------------
+
+APT_CONFIG=/var/lib/sbuild/apt.conf
+CCACHE_DIR=/build/ccache
+DEB_BUILD_OPTIONS=nocheck
+HOME=/sbuild-nonexistent
+LANG=C.UTF-8
+LC_ALL=C.UTF-8
+LOGNAME=runner
+OLDPWD=/
+PATH=/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+PWD=/<<BUILDDIR>>package
+SHELL=/bin/sh
+USER=runner
+
+dpkg-buildpackage
+-----------------
+
+Command: dpkg-buildpackage --sanitize-env -us -uc -b -rfakeroot
+dpkg-buildpackage: info: source package ros-jazzy-osqp
+dpkg-buildpackage: info: source version 0-2026.07.14.09.37
+dpkg-buildpackage: info: source distribution noble
+dpkg-buildpackage: info: source changed by Christian Rauch <Rauch.Christian@gmx.de>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+dpkg-source: info: using options from package/debian/source/options: --auto-commit
+ fakeroot debian/rules clean
+dh clean -v --buildsystem=cmake --builddirectory=.obj-x86_64-linux-gnu
+   dh_auto_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_autoreconf_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	rm -f debian/debhelper-build-stamp
+	rm -rf debian/.debhelper/
+	rm -f -- debian/ros-jazzy-osqp.substvars debian/files
+	rm -fr -- debian/ros-jazzy-osqp/ debian/tmp/
+	find .  \( \( \
+		\( -path .\*/.git -o -path .\*/.svn -o -path .\*/.bzr -o -path .\*/.hg -o -path .\*/CVS -o -path .\*/.pc -o -path .\*/_darcs \) -prune -o -type f -a \
+	        \( -name '#*#' -o -name '.*~' -o -name '*~' -o -name DEADJOE \
+		 -o -name '*.orig' -o -name '*.rej' -o -name '*.bak' \
+		 -o -name '.*.orig' -o -name .*.rej -o -name '.SUMS' \
+		 -o -name TAGS -o \( -path '*/.deps/*' -a -name '*.P' \) \
+		\) -exec rm -f {} + \) -o \
+		\( -type d -a \( -name autom4te.cache -o -name __pycache__ \) -prune -exec rm -rf {} + \) \)
+ debian/rules build
+dh build -v --buildsystem=cmake --builddirectory=.obj-x86_64-linux-gnu
+   dh_update_autotools_config -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_autoreconf -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/jazzy/setup.sh" ]; then . "/opt/ros/jazzy/setup.sh"; fi && \
+dh_auto_configure -- \
+	-DCMAKE_INSTALL_PREFIX="/opt/ros/jazzy" \
+	-DCMAKE_PREFIX_PATH="/opt/ros/jazzy" \
+	-DBUILD_TESTING=OFF
+	cd .obj-x86_64-linux-gnu && DEB_PYTHON_INSTALL_LAYOUT=deb cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_SYSCONFDIR=/etc -DCMAKE_INSTALL_LOCALSTATEDIR=/var -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=ON -DFETCHCONTENT_FULLY_DISCONNECTED=ON -DCMAKE_INSTALL_RUNSTATEDIR=/run "-GUnix Makefiles" -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_INSTALL_LIBDIR=lib/x86_64-linux-gnu -DBUILD_TESTING:BOOL=OFF -DCMAKE_INSTALL_PREFIX=/opt/ros/jazzy -DCMAKE_PREFIX_PATH=/opt/ros/jazzy -DBUILD_TESTING=OFF ..
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/lib/ccache/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Debug mode: 
+-- We are on a Linux system
+-- Embedded mode: OFF
+-- Algebra backend: builtin
+-- Solver profiling: ON
+-- Solver interrupt: ON
+-- Using double precision floating-point
+-- Using long integers
+-- Code generation: ON
+-- Derivative support: ON
+-- Fetching/configuring QDLDL solver
+--   Using double precision floats
+--   Long integers (64bit) are ON
+--   Static library build is OFF
+--   Shared library build is OFF
+--   Demo executable build is OFF
+--   Not building demo executable
+--   Unit testing suite build is OFF
+-- Build static library: ON
+-- Build shared library: ON
+-- Build demo executable: ON
+-- Configuring done (1.6s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY
+
+
+-- Build files have been written to: /<<BUILDDIR>>package/.obj-x86_64-linux-gnu
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+	rm -f debian/ros-jazzy-osqp.debhelper.log
+   debian/rules override_dh_auto_build
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/jazzy/setup.sh" ]; then . "/opt/ros/jazzy/setup.sh"; fi && \
+dh_auto_build
+	cd .obj-x86_64-linux-gnu && make -j4 "INSTALL=install --strip-program=true" VERBOSE=1
+make[2]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -P /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/VerifyGlobs.cmake
+/usr/bin/cmake -S/<<BUILDDIR>>package -B/<<BUILDDIR>>package/.obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles /<<BUILDDIR>>package/.obj-x86_64-linux-gnu//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[3]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f algebra/builtin/CMakeFiles/copy_codegen_linalg.dir/build.make algebra/builtin/CMakeFiles/copy_codegen_linalg.dir/depend
+make  -f CMakeFiles/copy_codegen_makefile.dir/build.make CMakeFiles/copy_codegen_makefile.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/algebra/builtin /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/algebra/builtin /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/algebra/builtin/CMakeFiles/copy_codegen_linalg.dir/DependInfo.cmake "--color="
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/copy_codegen_makefile.dir/DependInfo.cmake "--color="
+make  -f include/CMakeFiles/copy_codegen_incs.dir/build.make include/CMakeFiles/copy_codegen_incs.dir/depend
+make  -f src/CMakeFiles/copy_codegen_srcs.dir/build.make src/CMakeFiles/copy_codegen_srcs.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/include /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/CMakeFiles/copy_codegen_incs.dir/DependInfo.cmake "--color="
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/src /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/src /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/src/CMakeFiles/copy_codegen_srcs.dir/DependInfo.cmake "--color="
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/copy_codegen_makefile.dir/build.make CMakeFiles/copy_codegen_makefile.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f include/CMakeFiles/copy_codegen_incs.dir/build.make include/CMakeFiles/copy_codegen_incs.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f algebra/builtin/CMakeFiles/copy_codegen_linalg.dir/build.make algebra/builtin/CMakeFiles/copy_codegen_linalg.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f src/CMakeFiles/copy_codegen_srcs.dir/build.make src/CMakeFiles/copy_codegen_srcs.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[  1%] Copying codegen makefile
+[  2%] Copying algebra_matrix.h
+/usr/bin/cmake -E copy /<<BUILDDIR>>package/configure/Makefile.emosqp /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/Makefile
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include && /usr/bin/cmake -E copy /<<BUILDDIR>>package/include/private/algebra_matrix.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/algebra_matrix.h
+[  3%] Copying algebra_impl.h
+[  4%] Copying auxil.c
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/algebra/builtin && /usr/bin/cmake -E copy /<<BUILDDIR>>package/algebra/builtin/algebra_impl.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/algebra_impl.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/src && /usr/bin/cmake -E copy /<<BUILDDIR>>package/src/auxil.c /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/src/auxil.c
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[  5%] Copying algebra_vector.h
+[  5%] Built target copy_codegen_makefile
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include && /usr/bin/cmake -E copy /<<BUILDDIR>>package/include/private/algebra_vector.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/algebra_vector.h
+[  6%] Copying algebra_libs.c
+[  8%] Copying error.c
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/algebra/builtin && /usr/bin/cmake -E copy /<<BUILDDIR>>package/algebra/builtin/algebra_libs.c /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/src/algebra_libs.c
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/src && /usr/bin/cmake -E copy /<<BUILDDIR>>package/src/error.c /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/src/error.c
+[  9%] Copying osqp_api.c
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/src && /usr/bin/cmake -E copy /<<BUILDDIR>>package/src/osqp_api.c /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/src/osqp_api.c
+[ 10%] Copying auxil.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include && /usr/bin/cmake -E copy /<<BUILDDIR>>package/include/private/auxil.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/auxil.h
+[ 11%] Copying vector.c
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/algebra/builtin && /usr/bin/cmake -E copy /<<BUILDDIR>>package/algebra/builtin/vector.c /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/src/vector.c
+[ 12%] Copying scaling.c
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/src && /usr/bin/cmake -E copy /<<BUILDDIR>>package/src/scaling.c /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/src/scaling.c
+make  -f _deps/qdldl-build/CMakeFiles/qdldlobject.dir/build.make _deps/qdldl-build/CMakeFiles/qdldlobject.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/CMakeFiles/qdldlobject.dir/DependInfo.cmake "--color="
+[ 13%] Copying error.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include && /usr/bin/cmake -E copy /<<BUILDDIR>>package/include/private/error.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/error.h
+[ 15%] Copying matrix.c
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/algebra/builtin && /usr/bin/cmake -E copy /<<BUILDDIR>>package/algebra/builtin/matrix.c /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/src/matrix.c
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f _deps/qdldl-build/CMakeFiles/qdldlobject.dir/build.make _deps/qdldl-build/CMakeFiles/qdldlobject.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 16%] Copying util.c
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/src && /usr/bin/cmake -E copy /<<BUILDDIR>>package/src/util.c /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/src/util.c
+[ 17%] Building C object _deps/qdldl-build/CMakeFiles/qdldlobject.dir/src/qdldl.c.o
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build && /usr/lib/ccache/cc  -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -O3 -fPIC -MD -MT _deps/qdldl-build/CMakeFiles/qdldlobject.dir/src/qdldl.c.o -MF CMakeFiles/qdldlobject.dir/src/qdldl.c.o.d -o CMakeFiles/qdldlobject.dir/src/qdldl.c.o -c /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/src/qdldl.c
+[ 18%] Copying glob_opts.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include && /usr/bin/cmake -E copy /<<BUILDDIR>>package/include/private/glob_opts.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/glob_opts.h
+[ 19%] Copying csc_math.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/algebra/builtin && /usr/bin/cmake -E copy /<<BUILDDIR>>package/algebra/_common/csc_math.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/csc_math.h
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 19%] Built target copy_codegen_srcs
+[ 20%] Copying lin_alg.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include && /usr/bin/cmake -E copy /<<BUILDDIR>>package/include/private/lin_alg.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/lin_alg.h
+[ 22%] Copying csc_math.c
+[ 23%] Copying printing.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/algebra/builtin && /usr/bin/cmake -E copy /<<BUILDDIR>>package/algebra/_common/csc_math.c /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/src/csc_math.c
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include && /usr/bin/cmake -E copy /<<BUILDDIR>>package/include/private/printing.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/printing.h
+[ 24%] Copying csc_utils.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/algebra/builtin && /usr/bin/cmake -E copy /<<BUILDDIR>>package/algebra/_common/csc_utils.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/csc_utils.h
+[ 25%] Copying profilers.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include && /usr/bin/cmake -E copy /<<BUILDDIR>>package/include/private/profilers.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/profilers.h
+[ 26%] Copying scaling.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include && /usr/bin/cmake -E copy /<<BUILDDIR>>package/include/private/scaling.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/scaling.h
+[ 27%] Copying csc_utils.c
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/algebra/builtin && /usr/bin/cmake -E copy /<<BUILDDIR>>package/algebra/_common/csc_utils.c /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/src/csc_utils.c
+[ 29%] Copying kkt.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/algebra/builtin && /usr/bin/cmake -E copy /<<BUILDDIR>>package/algebra/_common/kkt.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/kkt.h
+[ 30%] Copying timing.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include && /usr/bin/cmake -E copy /<<BUILDDIR>>package/include/private/timing.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/timing.h
+[ 31%] Copying types.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include && /usr/bin/cmake -E copy /<<BUILDDIR>>package/include/private/types.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/types.h
+[ 32%] Copying kkt.c
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/algebra/builtin && /usr/bin/cmake -E copy /<<BUILDDIR>>package/algebra/_common/kkt.c /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/src/kkt.c
+[ 33%] Copying qdldl_interface.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/algebra/builtin && /usr/bin/cmake -E copy /<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/qdldl_interface.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/qdldl_interface.h
+[ 34%] Copying util.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include && /usr/bin/cmake -E copy /<<BUILDDIR>>package/include/private/util.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/util.h
+[ 36%] Copying version.h
+[ 37%] Copying qdldl_interface.c
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include && /usr/bin/cmake -E copy /<<BUILDDIR>>package/include/private/version.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/version.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/algebra/builtin && /usr/bin/cmake -E copy /<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/qdldl_interface.c /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/src/qdldl_interface.c
+[ 38%] Copying osqp.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include && /usr/bin/cmake -E copy /<<BUILDDIR>>package/include/public/osqp.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/public/osqp.h
+[ 39%] Copying qdldl.c
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/algebra/builtin && /usr/bin/cmake -E copy /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/src/qdldl.c /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/src/qdldl.c
+[ 40%] Copying osqp_api_constants.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include && /usr/bin/cmake -E copy /<<BUILDDIR>>package/include/public/osqp_api_constants.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/public/osqp_api_constants.h
+[ 41%] Copying osqp_api_functions.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include && /usr/bin/cmake -E copy /<<BUILDDIR>>package/include/public/osqp_api_functions.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/public/osqp_api_functions.h
+[ 43%] Copying qdldl.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/algebra/builtin && /usr/bin/cmake -E copy /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include/qdldl.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/qdldl.h
+[ 44%] Copying qdldl_version.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/algebra/builtin && /usr/bin/cmake -E copy /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include/qdldl_version.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/qdldl_version.h
+[ 45%] Copying osqp_api_types.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include && /usr/bin/cmake -E copy /<<BUILDDIR>>package/include/public/osqp_api_types.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/public/osqp_api_types.h
+[ 46%] Copying osqp_export_define.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include && /usr/bin/cmake -E copy /<<BUILDDIR>>package/include/public/osqp_export_define.h /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/public/osqp_export_define.h
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 47%] Copying qdldl_types.h
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/algebra/builtin && /usr/bin/cmake -E copy /<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/qdldl_codegen_types.h.in /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/codegen_src/inc/private/qdldl_types.h
+[ 47%] Built target copy_codegen_incs
+[ 47%] Built target qdldlobject
+make  -f CMakeFiles/OSQPLIB.dir/build.make CMakeFiles/OSQPLIB.dir/depend
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/OSQPLIB.dir/DependInfo.cmake "--color="
+[ 47%] Built target copy_codegen_linalg
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/OSQPLIB.dir/build.make CMakeFiles/OSQPLIB.dir/build
+make  -f CMakeFiles/copy_codegen_files.dir/build.make CMakeFiles/copy_codegen_files.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/copy_codegen_files.dir/DependInfo.cmake "--color="
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 48%] Building C object CMakeFiles/OSQPLIB.dir/src/auxil.c.o
+[ 50%] Building C object CMakeFiles/OSQPLIB.dir/src/error.c.o
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 51%] Building C object CMakeFiles/OSQPLIB.dir/src/scaling.c.o
+make  -f CMakeFiles/copy_codegen_files.dir/build.make CMakeFiles/copy_codegen_files.dir/build
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/src/error.c.o -MF CMakeFiles/OSQPLIB.dir/src/error.c.o.d -o CMakeFiles/OSQPLIB.dir/src/error.c.o -c /<<BUILDDIR>>package/src/error.c
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/src/auxil.c.o -MF CMakeFiles/OSQPLIB.dir/src/auxil.c.o.d -o CMakeFiles/OSQPLIB.dir/src/auxil.c.o -c /<<BUILDDIR>>package/src/auxil.c
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/src/scaling.c.o -MF CMakeFiles/OSQPLIB.dir/src/scaling.c.o.d -o CMakeFiles/OSQPLIB.dir/src/scaling.c.o -c /<<BUILDDIR>>package/src/scaling.c
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/copy_codegen_files.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 51%] Built target copy_codegen_files
+[ 52%] Building C object CMakeFiles/OSQPLIB.dir/src/util.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/src/util.c.o -MF CMakeFiles/OSQPLIB.dir/src/util.c.o.d -o CMakeFiles/OSQPLIB.dir/src/util.c.o -c /<<BUILDDIR>>package/src/util.c
+[ 53%] Building C object CMakeFiles/OSQPLIB.dir/src/polish.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/src/polish.c.o -MF CMakeFiles/OSQPLIB.dir/src/polish.c.o.d -o CMakeFiles/OSQPLIB.dir/src/polish.c.o -c /<<BUILDDIR>>package/src/polish.c
+[ 54%] Building C object CMakeFiles/OSQPLIB.dir/src/derivative.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/src/derivative.c.o -MF CMakeFiles/OSQPLIB.dir/src/derivative.c.o.d -o CMakeFiles/OSQPLIB.dir/src/derivative.c.o -c /<<BUILDDIR>>package/src/derivative.c
+[ 55%] Building C object CMakeFiles/OSQPLIB.dir/src/interrupt_unix.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/src/interrupt_unix.c.o -MF CMakeFiles/OSQPLIB.dir/src/interrupt_unix.c.o.d -o CMakeFiles/OSQPLIB.dir/src/interrupt_unix.c.o -c /<<BUILDDIR>>package/src/interrupt_unix.c
+[ 56%] Building C object CMakeFiles/OSQPLIB.dir/src/timing_linux.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/src/timing_linux.c.o -MF CMakeFiles/OSQPLIB.dir/src/timing_linux.c.o.d -o CMakeFiles/OSQPLIB.dir/src/timing_linux.c.o -c /<<BUILDDIR>>package/src/timing_linux.c
+[ 58%] Building C object CMakeFiles/OSQPLIB.dir/src/codegen.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/src/codegen.c.o -MF CMakeFiles/OSQPLIB.dir/src/codegen.c.o.d -o CMakeFiles/OSQPLIB.dir/src/codegen.c.o -c /<<BUILDDIR>>package/src/codegen.c
+[ 59%] Building C object CMakeFiles/OSQPLIB.dir/algebra/_common/csc_math.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/algebra/_common/csc_math.c.o -MF CMakeFiles/OSQPLIB.dir/algebra/_common/csc_math.c.o.d -o CMakeFiles/OSQPLIB.dir/algebra/_common/csc_math.c.o -c /<<BUILDDIR>>package/algebra/_common/csc_math.c
+[ 60%] Building C object CMakeFiles/OSQPLIB.dir/algebra/_common/csc_utils.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/algebra/_common/csc_utils.c.o -MF CMakeFiles/OSQPLIB.dir/algebra/_common/csc_utils.c.o.d -o CMakeFiles/OSQPLIB.dir/algebra/_common/csc_utils.c.o -c /<<BUILDDIR>>package/algebra/_common/csc_utils.c
+[ 61%] Building C object CMakeFiles/OSQPLIB.dir/algebra/builtin/algebra_libs.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/algebra/builtin/algebra_libs.c.o -MF CMakeFiles/OSQPLIB.dir/algebra/builtin/algebra_libs.c.o.d -o CMakeFiles/OSQPLIB.dir/algebra/builtin/algebra_libs.c.o -c /<<BUILDDIR>>package/algebra/builtin/algebra_libs.c
+[ 62%] Building C object CMakeFiles/OSQPLIB.dir/algebra/builtin/vector.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/algebra/builtin/vector.c.o -MF CMakeFiles/OSQPLIB.dir/algebra/builtin/vector.c.o.d -o CMakeFiles/OSQPLIB.dir/algebra/builtin/vector.c.o -c /<<BUILDDIR>>package/algebra/builtin/vector.c
+[ 63%] Building C object CMakeFiles/OSQPLIB.dir/algebra/builtin/matrix.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/algebra/builtin/matrix.c.o -MF CMakeFiles/OSQPLIB.dir/algebra/builtin/matrix.c.o.d -o CMakeFiles/OSQPLIB.dir/algebra/builtin/matrix.c.o -c /<<BUILDDIR>>package/algebra/builtin/matrix.c
+[ 65%] Building C object CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/SuiteSparse_config.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/SuiteSparse_config.c.o -MF CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/SuiteSparse_config.c.o.d -o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/SuiteSparse_config.c.o -c /<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/src/SuiteSparse_config.c
+[ 66%] Building C object CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_1.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_1.c.o -MF CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_1.c.o.d -o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_1.c.o -c /<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/src/amd_1.c
+[ 67%] Building C object CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_2.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_2.c.o -MF CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_2.c.o.d -o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_2.c.o -c /<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/src/amd_2.c
+[ 68%] Building C object CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_aat.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_aat.c.o -MF CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_aat.c.o.d -o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_aat.c.o -c /<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/src/amd_aat.c
+[ 69%] Building C object CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_control.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_control.c.o -MF CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_control.c.o.d -o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_control.c.o -c /<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/src/amd_control.c
+[ 70%] Building C object CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_defaults.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_defaults.c.o -MF CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_defaults.c.o.d -o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_defaults.c.o -c /<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/src/amd_defaults.c
+[ 72%] Building C object CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_info.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_info.c.o -MF CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_info.c.o.d -o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_info.c.o -c /<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/src/amd_info.c
+[ 73%] Building C object CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_order.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_order.c.o -MF CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_order.c.o.d -o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_order.c.o -c /<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/src/amd_order.c
+[ 74%] Building C object CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_post_tree.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_post_tree.c.o -MF CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_post_tree.c.o.d -o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_post_tree.c.o -c /<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/src/amd_post_tree.c
+[ 75%] Building C object CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_postorder.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_postorder.c.o -MF CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_postorder.c.o.d -o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_postorder.c.o -c /<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/src/amd_postorder.c
+[ 76%] Building C object CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_preprocess.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_preprocess.c.o -MF CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_preprocess.c.o.d -o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_preprocess.c.o -c /<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/src/amd_preprocess.c
+[ 77%] Building C object CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_valid.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_valid.c.o -MF CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_valid.c.o.d -o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_valid.c.o -c /<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/src/amd_valid.c
+[ 79%] Building C object CMakeFiles/OSQPLIB.dir/algebra/_common/kkt.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/algebra/_common/kkt.c.o -MF CMakeFiles/OSQPLIB.dir/algebra/_common/kkt.c.o.d -o CMakeFiles/OSQPLIB.dir/algebra/_common/kkt.c.o -c /<<BUILDDIR>>package/algebra/_common/kkt.c
+[ 80%] Building C object CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/qdldl_interface.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/qdldl_interface.c.o -MF CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/qdldl_interface.c.o.d -o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/qdldl_interface.c.o -c /<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/qdldl_interface.c
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 80%] Built target OSQPLIB
+make  -f CMakeFiles/osqpstatic.dir/build.make CMakeFiles/osqpstatic.dir/depend
+make  -f CMakeFiles/osqp.dir/build.make CMakeFiles/osqp.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/osqpstatic.dir/DependInfo.cmake "--color="
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/osqp.dir/DependInfo.cmake "--color="
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/osqpstatic.dir/build.make CMakeFiles/osqpstatic.dir/build
+make  -f CMakeFiles/osqp.dir/build.make CMakeFiles/osqp.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 81%] Building C object CMakeFiles/osqpstatic.dir/src/osqp_api.c.o
+[ 82%] Building C object CMakeFiles/osqp.dir/src/osqp_api.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/osqpstatic.dir/src/osqp_api.c.o -MF CMakeFiles/osqpstatic.dir/src/osqp_api.c.o.d -o CMakeFiles/osqpstatic.dir/src/osqp_api.c.o -c /<<BUILDDIR>>package/src/osqp_api.c
+/usr/lib/ccache/cc -DBUILDING_OSQP -DOSQP_SHARED_LIB -Dosqp_EXPORTS -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIC -MD -MT CMakeFiles/osqp.dir/src/osqp_api.c.o -MF CMakeFiles/osqp.dir/src/osqp_api.c.o.d -o CMakeFiles/osqp.dir/src/osqp_api.c.o -c /<<BUILDDIR>>package/src/osqp_api.c
+[ 83%] Linking C static library out/libosqpstatic.a
+/usr/bin/cmake -P CMakeFiles/osqpstatic.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/osqpstatic.dir/link.txt --verbose=1
+/usr/bin/ar qc out/libosqpstatic.a CMakeFiles/osqpstatic.dir/src/osqp_api.c.o CMakeFiles/OSQPLIB.dir/src/auxil.c.o CMakeFiles/OSQPLIB.dir/src/error.c.o CMakeFiles/OSQPLIB.dir/src/scaling.c.o CMakeFiles/OSQPLIB.dir/src/util.c.o CMakeFiles/OSQPLIB.dir/src/polish.c.o CMakeFiles/OSQPLIB.dir/src/derivative.c.o CMakeFiles/OSQPLIB.dir/src/interrupt_unix.c.o CMakeFiles/OSQPLIB.dir/src/timing_linux.c.o CMakeFiles/OSQPLIB.dir/src/codegen.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/csc_math.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/csc_utils.c.o CMakeFiles/OSQPLIB.dir/algebra/builtin/algebra_libs.c.o CMakeFiles/OSQPLIB.dir/algebra/builtin/vector.c.o CMakeFiles/OSQPLIB.dir/algebra/builtin/matrix.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/SuiteSparse_config.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_1.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_2.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_aat.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_control.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_defaults.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_info.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_order.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_post_tree.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_postorder.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_preprocess.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_valid.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/kkt.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/qdldl_interface.c.o "_deps/qdldl-build/CMakeFiles/qdldlobject.dir/src/qdldl.c.o"
+/usr/bin/ranlib out/libosqpstatic.a
+[ 84%] Linking C shared library out/libosqp.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/osqp.dir/link.txt --verbose=1
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/lib/ccache/cc -fPIC -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -shared -Wl,-soname,libosqp.so -o out/libosqp.so CMakeFiles/osqp.dir/src/osqp_api.c.o CMakeFiles/OSQPLIB.dir/src/auxil.c.o CMakeFiles/OSQPLIB.dir/src/error.c.o CMakeFiles/OSQPLIB.dir/src/scaling.c.o CMakeFiles/OSQPLIB.dir/src/util.c.o CMakeFiles/OSQPLIB.dir/src/polish.c.o CMakeFiles/OSQPLIB.dir/src/derivative.c.o CMakeFiles/OSQPLIB.dir/src/interrupt_unix.c.o CMakeFiles/OSQPLIB.dir/src/timing_linux.c.o CMakeFiles/OSQPLIB.dir/src/codegen.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/csc_math.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/csc_utils.c.o CMakeFiles/OSQPLIB.dir/algebra/builtin/algebra_libs.c.o CMakeFiles/OSQPLIB.dir/algebra/builtin/vector.c.o CMakeFiles/OSQPLIB.dir/algebra/builtin/matrix.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/SuiteSparse_config.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_1.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_2.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_aat.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_control.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_defaults.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_info.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_order.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_post_tree.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_postorder.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_preprocess.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/amd/src/amd_valid.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/kkt.c.o CMakeFiles/OSQPLIB.dir/algebra/_common/lin_sys/qdldl/qdldl_interface.c.o "_deps/qdldl-build/CMakeFiles/qdldlobject.dir/src/qdldl.c.o"   -lm -lrt -ldl 
+[ 84%] Built target osqpstatic
+make  -f CMakeFiles/osqp_simple_demo.dir/build.make CMakeFiles/osqp_simple_demo.dir/depend
+make  -f CMakeFiles/osqp_demo.dir/build.make CMakeFiles/osqp_demo.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/osqp_simple_demo.dir/DependInfo.cmake "--color="
+make  -f CMakeFiles/osqp_codegen_demo.dir/build.make CMakeFiles/osqp_codegen_demo.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/osqp_demo.dir/DependInfo.cmake "--color="
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/osqp_codegen_demo.dir/DependInfo.cmake "--color="
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/osqp_simple_demo.dir/build.make CMakeFiles/osqp_simple_demo.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/osqp_demo.dir/build.make CMakeFiles/osqp_demo.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/osqp_codegen_demo.dir/build.make CMakeFiles/osqp_codegen_demo.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 87%] Building C object CMakeFiles/osqp_demo.dir/examples/osqp_demo.c.o
+[ 87%] Building C object CMakeFiles/osqp_simple_demo.dir/examples/osqp_simple_demo.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -I/<<BUILDDIR>>package/examples/problems -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIE -MD -MT CMakeFiles/osqp_demo.dir/examples/osqp_demo.c.o -MF CMakeFiles/osqp_demo.dir/examples/osqp_demo.c.o.d -o CMakeFiles/osqp_demo.dir/examples/osqp_demo.c.o -c /<<BUILDDIR>>package/examples/osqp_demo.c
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIE -MD -MT CMakeFiles/osqp_simple_demo.dir/examples/osqp_simple_demo.c.o -MF CMakeFiles/osqp_simple_demo.dir/examples/osqp_simple_demo.c.o.d -o CMakeFiles/osqp_simple_demo.dir/examples/osqp_simple_demo.c.o -c /<<BUILDDIR>>package/examples/osqp_simple_demo.c
+[ 88%] Building C object CMakeFiles/osqp_codegen_demo.dir/examples/osqp_codegen_demo.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIE -MD -MT CMakeFiles/osqp_codegen_demo.dir/examples/osqp_codegen_demo.c.o -MF CMakeFiles/osqp_codegen_demo.dir/examples/osqp_codegen_demo.c.o.d -o CMakeFiles/osqp_codegen_demo.dir/examples/osqp_codegen_demo.c.o -c /<<BUILDDIR>>package/examples/osqp_codegen_demo.c
+[ 89%] Linking C executable out/osqp_simple_demo
+/usr/bin/cmake -E cmake_link_script CMakeFiles/osqp_simple_demo.dir/link.txt --verbose=1
+[ 90%] Linking C executable out/osqp_codegen_demo
+/usr/bin/cmake -E cmake_link_script CMakeFiles/osqp_codegen_demo.dir/link.txt --verbose=1
+/usr/lib/ccache/cc -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 CMakeFiles/osqp_codegen_demo.dir/examples/osqp_codegen_demo.c.o -o out/osqp_codegen_demo  out/libosqpstatic.a  -lm -lrt -ldl 
+/usr/lib/ccache/cc -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 CMakeFiles/osqp_simple_demo.dir/examples/osqp_simple_demo.c.o -o out/osqp_simple_demo  out/libosqpstatic.a  -lm -lrt -ldl 
+[ 91%] Building C object CMakeFiles/osqp_demo.dir/examples/problems/cvxqp2_s.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -I/<<BUILDDIR>>package/examples/problems -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIE -MD -MT CMakeFiles/osqp_demo.dir/examples/problems/cvxqp2_s.c.o -MF CMakeFiles/osqp_demo.dir/examples/problems/cvxqp2_s.c.o.d -o CMakeFiles/osqp_demo.dir/examples/problems/cvxqp2_s.c.o -c /<<BUILDDIR>>package/examples/problems/cvxqp2_s.c
+[ 93%] Building C object CMakeFiles/osqp_demo.dir/examples/problems/qpcblend.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -I/<<BUILDDIR>>package/examples/problems -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIE -MD -MT CMakeFiles/osqp_demo.dir/examples/problems/qpcblend.c.o -MF CMakeFiles/osqp_demo.dir/examples/problems/qpcblend.c.o.d -o CMakeFiles/osqp_demo.dir/examples/problems/qpcblend.c.o -c /<<BUILDDIR>>package/examples/problems/qpcblend.c
+[ 94%] Building C object CMakeFiles/osqp_demo.dir/examples/problems/qptest.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -I/<<BUILDDIR>>package/examples/problems -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIE -MD -MT CMakeFiles/osqp_demo.dir/examples/problems/qptest.c.o -MF CMakeFiles/osqp_demo.dir/examples/problems/qptest.c.o.d -o CMakeFiles/osqp_demo.dir/examples/problems/qptest.c.o -c /<<BUILDDIR>>package/examples/problems/qptest.c
+[ 95%] Building C object CMakeFiles/osqp_demo.dir/examples/problems/hs21.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -I/<<BUILDDIR>>package/examples/problems -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIE -MD -MT CMakeFiles/osqp_demo.dir/examples/problems/hs21.c.o -MF CMakeFiles/osqp_demo.dir/examples/problems/hs21.c.o.d -o CMakeFiles/osqp_demo.dir/examples/problems/hs21.c.o -c /<<BUILDDIR>>package/examples/problems/hs21.c
+[ 96%] Building C object CMakeFiles/osqp_demo.dir/examples/problems/hs35.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -I/<<BUILDDIR>>package/examples/problems -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIE -MD -MT CMakeFiles/osqp_demo.dir/examples/problems/hs35.c.o -MF CMakeFiles/osqp_demo.dir/examples/problems/hs35.c.o.d -o CMakeFiles/osqp_demo.dir/examples/problems/hs35.c.o -c /<<BUILDDIR>>package/examples/problems/hs35.c
+[ 97%] Building C object CMakeFiles/osqp_demo.dir/examples/problems/primalc1.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -I/<<BUILDDIR>>package/examples/problems -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIE -MD -MT CMakeFiles/osqp_demo.dir/examples/problems/primalc1.c.o -MF CMakeFiles/osqp_demo.dir/examples/problems/primalc1.c.o.d -o CMakeFiles/osqp_demo.dir/examples/problems/primalc1.c.o -c /<<BUILDDIR>>package/examples/problems/primalc1.c
+[ 98%] Building C object CMakeFiles/osqp_demo.dir/examples/problems/largeqp.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package/include/public -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/public -I/<<BUILDDIR>>package/include/private -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/private -I/<<BUILDDIR>>package/algebra/builtin/../_common -I/<<BUILDDIR>>package/algebra/builtin -I/<<BUILDDIR>>package/algebra/_common -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl -I/<<BUILDDIR>>package/algebra/_common/lin_sys/qdldl/amd/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/include -I/<<BUILDDIR>>package/examples/problems -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 -fPIE -MD -MT CMakeFiles/osqp_demo.dir/examples/problems/largeqp.c.o -MF CMakeFiles/osqp_demo.dir/examples/problems/largeqp.c.o.d -o CMakeFiles/osqp_demo.dir/examples/problems/largeqp.c.o -c /<<BUILDDIR>>package/examples/problems/largeqp.c
+[100%] Linking C executable out/osqp_demo
+/usr/bin/cmake -E cmake_link_script CMakeFiles/osqp_demo.dir/link.txt --verbose=1
+/usr/lib/ccache/cc -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/<<BUILDDIR>>package=/usr/src/ros-jazzy-osqp-0-2026.07.14.09.37 -Wdate-time -D_FORTIFY_SOURCE=3 -O3 CMakeFiles/osqp_demo.dir/examples/osqp_demo.c.o CMakeFiles/osqp_demo.dir/examples/problems/cvxqp2_s.c.o CMakeFiles/osqp_demo.dir/examples/problems/qpcblend.c.o CMakeFiles/osqp_demo.dir/examples/problems/qptest.c.o CMakeFiles/osqp_demo.dir/examples/problems/hs21.c.o CMakeFiles/osqp_demo.dir/examples/problems/hs35.c.o CMakeFiles/osqp_demo.dir/examples/problems/primalc1.c.o CMakeFiles/osqp_demo.dir/examples/problems/largeqp.c.o -o out/osqp_demo  out/libosqpstatic.a  -lm -lrt -ldl 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[100%] Built target osqp
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[100%] Built target osqp_simple_demo
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[100%] Built target osqp_codegen_demo
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[100%] Built target osqp_demo
+make[3]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles 0
+make[2]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+	rm -f debian/ros-jazzy-osqp.debhelper.log
+   debian/rules override_dh_auto_test
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+echo -- Running tests. Even if one of them fails the build is not canceled.
+-- Running tests. Even if one of them fails the build is not canceled.
+if [ -f "/opt/ros/jazzy/setup.sh" ]; then . "/opt/ros/jazzy/setup.sh"; fi && \
+dh_auto_test || true
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary -v --buildsystem=cmake --builddirectory=.obj-x86_64-linux-gnu
+   dh_testroot -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_prep -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	rm -f -- debian/ros-jazzy-osqp.substvars
+	rm -fr -- debian/.debhelper/generated/ros-jazzy-osqp/ debian/ros-jazzy-osqp/ debian/tmp/
+   debian/rules override_dh_auto_install
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/jazzy/setup.sh" ]; then . "/opt/ros/jazzy/setup.sh"; fi && \
+dh_auto_install
+	install -m0755 -d /<<BUILDDIR>>package/debian/ros-jazzy-osqp
+	cd .obj-x86_64-linux-gnu && make -j4 install DESTDIR=/<<BUILDDIR>>package/debian/ros-jazzy-osqp AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
+make[2]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -P /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/VerifyGlobs.cmake
+/usr/bin/cmake -S/<<BUILDDIR>>package -B/<<BUILDDIR>>package/.obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles /<<BUILDDIR>>package/.obj-x86_64-linux-gnu//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[3]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f algebra/builtin/CMakeFiles/copy_codegen_linalg.dir/build.make algebra/builtin/CMakeFiles/copy_codegen_linalg.dir/depend
+make  -f CMakeFiles/copy_codegen_makefile.dir/build.make CMakeFiles/copy_codegen_makefile.dir/depend
+make  -f include/CMakeFiles/copy_codegen_incs.dir/build.make include/CMakeFiles/copy_codegen_incs.dir/depend
+make  -f src/CMakeFiles/copy_codegen_srcs.dir/build.make src/CMakeFiles/copy_codegen_srcs.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/algebra/builtin /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/algebra/builtin /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/algebra/builtin/CMakeFiles/copy_codegen_linalg.dir/DependInfo.cmake "--color="
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/copy_codegen_makefile.dir/DependInfo.cmake "--color="
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/src /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/src /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/src/CMakeFiles/copy_codegen_srcs.dir/DependInfo.cmake "--color="
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/include /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/include/CMakeFiles/copy_codegen_incs.dir/DependInfo.cmake "--color="
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f algebra/builtin/CMakeFiles/copy_codegen_linalg.dir/build.make algebra/builtin/CMakeFiles/copy_codegen_linalg.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/copy_codegen_makefile.dir/build.make CMakeFiles/copy_codegen_makefile.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'algebra/builtin/CMakeFiles/copy_codegen_linalg.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f src/CMakeFiles/copy_codegen_srcs.dir/build.make src/CMakeFiles/copy_codegen_srcs.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f include/CMakeFiles/copy_codegen_incs.dir/build.make include/CMakeFiles/copy_codegen_incs.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/copy_codegen_makefile.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'src/CMakeFiles/copy_codegen_srcs.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'include/CMakeFiles/copy_codegen_incs.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 18%] Built target copy_codegen_linalg
+make  -f _deps/qdldl-build/CMakeFiles/qdldlobject.dir/build.make _deps/qdldl-build/CMakeFiles/qdldlobject.dir/depend
+[ 24%] Built target copy_codegen_srcs
+[ 25%] Built target copy_codegen_makefile
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-src /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/_deps/qdldl-build/CMakeFiles/qdldlobject.dir/DependInfo.cmake "--color="
+[ 46%] Built target copy_codegen_incs
+make  -f CMakeFiles/copy_codegen_files.dir/build.make CMakeFiles/copy_codegen_files.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/copy_codegen_files.dir/DependInfo.cmake "--color="
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f _deps/qdldl-build/CMakeFiles/qdldlobject.dir/build.make _deps/qdldl-build/CMakeFiles/qdldlobject.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for '_deps/qdldl-build/CMakeFiles/qdldlobject.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/copy_codegen_files.dir/build.make CMakeFiles/copy_codegen_files.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/copy_codegen_files.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 47%] Built target qdldlobject
+make  -f CMakeFiles/OSQPLIB.dir/build.make CMakeFiles/OSQPLIB.dir/depend
+[ 47%] Built target copy_codegen_files
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/OSQPLIB.dir/DependInfo.cmake "--color="
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/OSQPLIB.dir/build.make CMakeFiles/OSQPLIB.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/OSQPLIB.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 80%] Built target OSQPLIB
+make  -f CMakeFiles/osqpstatic.dir/build.make CMakeFiles/osqpstatic.dir/depend
+make  -f CMakeFiles/osqp.dir/build.make CMakeFiles/osqp.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/osqpstatic.dir/DependInfo.cmake "--color="
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/osqp.dir/DependInfo.cmake "--color="
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/osqpstatic.dir/build.make CMakeFiles/osqpstatic.dir/build
+make  -f CMakeFiles/osqp.dir/build.make CMakeFiles/osqp.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/osqpstatic.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/osqp.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 83%] Built target osqpstatic
+[ 84%] Built target osqp
+make  -f CMakeFiles/osqp_simple_demo.dir/build.make CMakeFiles/osqp_simple_demo.dir/depend
+make  -f CMakeFiles/osqp_demo.dir/build.make CMakeFiles/osqp_demo.dir/depend
+make  -f CMakeFiles/osqp_codegen_demo.dir/build.make CMakeFiles/osqp_codegen_demo.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/osqp_simple_demo.dir/DependInfo.cmake "--color="
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/osqp_codegen_demo.dir/DependInfo.cmake "--color="
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/osqp_demo.dir/DependInfo.cmake "--color="
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/osqp_simple_demo.dir/build.make CMakeFiles/osqp_simple_demo.dir/build
+make  -f CMakeFiles/osqp_demo.dir/build.make CMakeFiles/osqp_demo.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/osqp_codegen_demo.dir/build.make CMakeFiles/osqp_codegen_demo.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/osqp_simple_demo.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/osqp_codegen_demo.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/osqp_demo.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 87%] Built target osqp_simple_demo
+[ 93%] Built target osqp_codegen_demo
+[100%] Built target osqp_demo
+make[3]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles 0
+make  -f CMakeFiles/Makefile2 preinstall
+make[3]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[3]: Nothing to be done for 'preinstall'.
+make[3]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+Install the project...
+/usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: "None"
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/include/qdldl/qdldl.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/include/qdldl/qdldl_types.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/include/qdldl/qdldl_version.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/include/osqp/osqp.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/include/osqp/osqp_api_constants.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/include/osqp/osqp_api_functions.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/include/osqp/osqp_api_types.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/include/osqp/osqp_export_define.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/include/osqp/osqp_configure.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/libosqpstatic.a
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/cmake/osqp/osqpstatic-targets.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/cmake/osqp/osqpstatic-targets-none.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/libosqp.so
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/cmake/osqp/osqp-targets.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/cmake/osqp/osqp-targets-none.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/cmake/osqp/osqp-config.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/cmake/osqp/osqp-config-version.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/Makefile
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/src
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/src/error.c
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/src/util.c
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/src/algebra_libs.c
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/src/vector.c
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/src/scaling.c
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/src/qdldl_interface.c
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/src/kkt.c
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/src/osqp_api.c
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/src/csc_math.c
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/src/matrix.c
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/src/csc_utils.c
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/src/qdldl.c
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/src/auxil.c
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/public
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/public/osqp_api_functions.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/public/osqp.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/public/osqp_api_constants.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/public/osqp_export_define.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/public/osqp_api_types.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/kkt.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/scaling.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/util.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/version.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/lin_alg.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/csc_math.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/printing.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/qdldl_interface.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/qdldl_types.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/timing.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/error.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/algebra_impl.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/profilers.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/types.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/auxil.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/csc_utils.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/algebra_matrix.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/glob_opts.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/qdldl_version.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/qdldl.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-osqp/opt/ros/jazzy/share/osqp/codegen_files/inc/private/algebra_vector.h
+make[2]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   dh_installdocs -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-jazzy-osqp/usr/share/doc/ros-jazzy-osqp
+	install -p -m0644 debian/copyright debian/ros-jazzy-osqp/usr/share/doc/ros-jazzy-osqp/copyright
+   dh_installchangelogs -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-jazzy-osqp/usr/share/doc/ros-jazzy-osqp
+	install -p -m0644 debian/.debhelper/generated/ros-jazzy-osqp/dh_installchangelogs.dch.trimmed debian/ros-jazzy-osqp/usr/share/doc/ros-jazzy-osqp/changelog.Debian
+   dh_installinit -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_perl -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_link -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_strip_nondeterminism -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_compress -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	cd debian/ros-jazzy-osqp
+	chmod a-x usr/share/doc/ros-jazzy-osqp/changelog.Debian
+	gzip -9nf usr/share/doc/ros-jazzy-osqp/changelog.Debian
+	cd '/<<BUILDDIR>>package'
+   dh_fixperms -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	find debian/ros-jazzy-osqp -true -print0 2>/dev/null | xargs -0r chown --no-dereference 0:0
+	find debian/ros-jazzy-osqp ! -type l -a -true -a -true -print0 2>/dev/null | xargs -0r chmod go=rX,u+rw,a-s
+	find debian/ros-jazzy-osqp/usr/share/doc -type f -a -true -a ! -regex 'debian/ros-jazzy-osqp/usr/share/doc/[^/]*/examples/.*' -print0 2>/dev/null | xargs -0r chmod 0644
+	find debian/ros-jazzy-osqp/usr/share/doc -type d -a -true -a -true -print0 2>/dev/null | xargs -0r chmod 0755
+	find debian/ros-jazzy-osqp -type f \( -name '*.so.*' -o -name '*.so' -o -name '*.la' -o -name '*.a' -o -name '*.js' -o -name '*.css' -o -name '*.scss' -o -name '*.sass' -o -name '*.jpeg' -o -name '*.jpg' -o -name '*.png' -o -name '*.gif' -o -name '*.cmxs' -o -name '*.node' \) -a -true -a -true -print0 2>/dev/null | xargs -0r chmod 0644
+   dh_missing -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_strip -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	debugedit --build-id --build-id-seed=ros-jazzy-osqp/0-2026.07.14.09.37 debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/libosqp.so
+20f836e92eb26b891d39ff6427b9258e0eee3b4b
+	install -m0755 -d debian/.debhelper/ros-jazzy-osqp/dbgsym-root/usr/lib/debug/.build-id/20
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/libosqp.so debian/.debhelper/ros-jazzy-osqp/dbgsym-root/usr/lib/debug/.build-id/20/f836e92eb26b891d39ff6427b9258e0eee3b4b.debug
+	chmod 0644 -- debian/.debhelper/ros-jazzy-osqp/dbgsym-root/usr/lib/debug/.build-id/20/f836e92eb26b891d39ff6427b9258e0eee3b4b.debug
+	chown 0:0 -- debian/.debhelper/ros-jazzy-osqp/dbgsym-root/usr/lib/debug/.build-id/20/f836e92eb26b891d39ff6427b9258e0eee3b4b.debug
+	strip --remove-section=.comment --remove-section=.note --strip-unneeded -o /tmp/vEY1p0J8gb/strip2jFqML debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/libosqp.so
+	chmod --reference debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/libosqp.so /tmp/vEY1p0J8gb/strip2jFqML
+	cat '/tmp/vEY1p0J8gb/strip2jFqML' > 'debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/libosqp.so'
+	chmod --reference /tmp/vEY1p0J8gb/strip2jFqML debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/libosqp.so
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-jazzy-osqp/dbgsym-root/usr/lib/debug/.build-id/20/f836e92eb26b891d39ff6427b9258e0eee3b4b.debug debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/libosqp.so /tmp/vEY1p0J8gb/objcopymc2SSF
+	chmod --reference debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/libosqp.so /tmp/vEY1p0J8gb/objcopymc2SSF
+	cat '/tmp/vEY1p0J8gb/objcopymc2SSF' > 'debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/libosqp.so'
+	chmod --reference /tmp/vEY1p0J8gb/objcopymc2SSF debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/libosqp.so
+	strip --strip-debug --remove-section=.comment --remove-section=.note --enable-deterministic-archives -R .gnu.lto_\* -R .gnu.debuglto_\* -N __gnu_lto_slim -N __gnu_lto_v1 debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/libosqpstatic.a
+	readelf -W --section-headers debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/libosqpstatic.a | sed -n '/^ *\[[ 0-9]*]/s/ *\[[ 0-9]*\] *//p' | awk 'BEGIN {rv=1} /^NULL/ {next} $1 ~ /^.(text|data|(preinit|init|fini)_array$)/ {if ($5 !~ /^0+$/) rv=0} END { exit rv}'
+	install -m0755 -d debian/.debhelper/ros-jazzy-osqp/dbgsym-root/usr/share/doc
+	ln -s ros-jazzy-osqp debian/.debhelper/ros-jazzy-osqp/dbgsym-root/usr/share/doc/ros-jazzy-osqp-dbgsym
+	install -m0755 -d debian/.debhelper/ros-jazzy-osqp
+   dh_makeshlibs -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	rm -f debian/ros-jazzy-osqp/DEBIAN/shlibs
+	rm -f debian/ros-jazzy-osqp.debhelper.log
+   debian/rules override_dh_shlibdeps
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/jazzy/setup.sh" ]; then . "/opt/ros/jazzy/setup.sh"; fi && \
+dh_shlibdeps -l/<<BUILDDIR>>package/debian/ros-jazzy-osqp//opt/ros/jazzy/lib/:/<<BUILDDIR>>package/debian/ros-jazzy-osqp//opt/ros/jazzy/lib/x86_64-linux-gnu
+	install -m0755 -d debian/ros-jazzy-osqp/DEBIAN
+	dpkg-shlibdeps -Tdebian/ros-jazzy-osqp.substvars -l/<<BUILDDIR>>package/debian/ros-jazzy-osqp//opt/ros/jazzy/lib/ -l/<<BUILDDIR>>package/debian/ros-jazzy-osqp//opt/ros/jazzy/lib/x86_64-linux-gnu debian/ros-jazzy-osqp/opt/ros/jazzy/lib/x86_64-linux-gnu/libosqp.so
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   dh_installdeb -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-jazzy-osqp/DEBIAN
+   dh_gencontrol -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-jazzy-osqp/DEBIAN
+	echo misc:Depends= >> debian/ros-jazzy-osqp.substvars
+	echo misc:Pre-Depends= >> debian/ros-jazzy-osqp.substvars
+	install -m0755 -d debian/.debhelper/ros-jazzy-osqp/dbgsym-root/DEBIAN
+	dpkg-gencontrol -pros-jazzy-osqp -ldebian/changelog -Tdebian/ros-jazzy-osqp.substvars -Pdebian/.debhelper/ros-jazzy-osqp/dbgsym-root -UPre-Depends -URecommends -USuggests -UEnhances -UProvides -UEssential -UConflicts -DPriority=optional -UHomepage -UImportant -DAuto-Built-Package=debug-symbols -UProtected -UBuilt-Using -UStatic-Built-Using -DPackage=ros-jazzy-osqp-dbgsym "-DDepends=ros-jazzy-osqp (= \${binary:Version})" "-DDescription=debug symbols for ros-jazzy-osqp" -DBuild-Ids=20f836e92eb26b891d39ff6427b9258e0eee3b4b -DSection=debug -DPackage-Type=ddeb -UMulti-Arch -UReplaces -UBreaks
+	chmod 0644 -- debian/.debhelper/ros-jazzy-osqp/dbgsym-root/DEBIAN/control
+	chown 0:0 -- debian/.debhelper/ros-jazzy-osqp/dbgsym-root/DEBIAN/control
+	dpkg-gencontrol -pros-jazzy-osqp -ldebian/changelog -Tdebian/ros-jazzy-osqp.substvars -Pdebian/ros-jazzy-osqp
+	chmod 0644 -- debian/ros-jazzy-osqp/DEBIAN/control
+	chown 0:0 -- debian/ros-jazzy-osqp/DEBIAN/control
+   dh_md5sums -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-jazzy-osqp/DEBIAN
+	cd debian/ros-jazzy-osqp >/dev/null && xargs -r0 md5sum | perl -pe 'if (s@^\\@@) { s/\\\\/\\/g; }' > DEBIAN/md5sums
+	chmod 0644 -- debian/ros-jazzy-osqp/DEBIAN/md5sums
+	chown 0:0 -- debian/ros-jazzy-osqp/DEBIAN/md5sums
+	install -m0755 -d debian/.debhelper/ros-jazzy-osqp/dbgsym-root/DEBIAN
+	cd debian/.debhelper/ros-jazzy-osqp/dbgsym-root >/dev/null && xargs -r0 md5sum | perl -pe 'if (s@^\\@@) { s/\\\\/\\/g; }' > DEBIAN/md5sums
+	chmod 0644 -- debian/.debhelper/ros-jazzy-osqp/dbgsym-root/DEBIAN/md5sums
+	chown 0:0 -- debian/.debhelper/ros-jazzy-osqp/dbgsym-root/DEBIAN/md5sums
+   dh_builddeb -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	dpkg-deb --build debian/ros-jazzy-osqp ..
+dpkg-deb: building package 'ros-jazzy-osqp' in '../ros-jazzy-osqp_0-2026.07.14.09.37_amd64.deb'.
+	dpkg-deb --root-owner-group --build debian/.debhelper/ros-jazzy-osqp/dbgsym-root debian/.debhelper/scratch-space/build-ros-jazzy-osqp
+dpkg-deb: building package 'ros-jazzy-osqp-dbgsym' in 'debian/.debhelper/scratch-space/build-ros-jazzy-osqp/ros-jazzy-osqp-dbgsym_0-2026.07.14.09.37_amd64.deb'.
+	Renaming ros-jazzy-osqp-dbgsym_0-2026.07.14.09.37_amd64.deb to ros-jazzy-osqp-dbgsym_0-2026.07.14.09.37_amd64.ddeb
+	mv debian/.debhelper/scratch-space/build-ros-jazzy-osqp/ros-jazzy-osqp-dbgsym_0-2026.07.14.09.37_amd64.deb ../ros-jazzy-osqp-dbgsym_0-2026.07.14.09.37_amd64.ddeb
+ dpkg-genbuildinfo --build=binary -O../ros-jazzy-osqp_0-2026.07.14.09.37_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../ros-jazzy-osqp_0-2026.07.14.09.37_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-source: info: using options from package/debian/source/options: --auto-commit
+dpkg-buildpackage: info: binary-only upload (no source included)
+--------------------------------------------------------------------------------
+Build finished at 2026-07-14T09:38:27Z
+
+Finished
+--------
+
+I: Built successfully
+
++------------------------------------------------------------------------------+
+| Changes                                      Tue, 14 Jul 2026 09:38:28 +0000 |
++------------------------------------------------------------------------------+
+
+
+ros-jazzy-osqp_0-2026.07.14.09.37_amd64.changes:
+------------------------------------------------
+
+Format: 1.8
+Date: Tue, 14 Jul 2026 09:37:50 -0000
+Source: ros-jazzy-osqp
+Binary: ros-jazzy-osqp
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0-2026.07.14.09.37
+Distribution: noble
+Urgency: high
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Changed-By: Christian Rauch <Rauch.Christian@gmx.de>
+Description:
+ ros-jazzy-osqp - The Operator Splitting QP Solver
+Changes:
+ ros-jazzy-osqp (0-2026.07.14.09.37) noble; urgency=high
+ .
+   * Autogenerated, no changelog for this version found in CHANGELOG.rst.
+Checksums-Sha1:
+ 61ed3f1253af6275aa6306eb2c7097449c452e2c 174820 ros-jazzy-osqp-dbgsym_0-2026.07.14.09.37_amd64.ddeb
+ e28776846e005b4a5cb3a105b4f577bf21304548 7701 ros-jazzy-osqp_0-2026.07.14.09.37_amd64.buildinfo
+ 5ac000603976cbf85ed5a1e7b4828826e3153aae 152908 ros-jazzy-osqp_0-2026.07.14.09.37_amd64.deb
+Checksums-Sha256:
+ 7a609a22103ada7083cefbe5084f854d7636bc9676cc74bd3cdadee1df05a15c 174820 ros-jazzy-osqp-dbgsym_0-2026.07.14.09.37_amd64.ddeb
+ 29e849a41865e4513f7db42706abe1d676e46d3dc26331c82536cdb626b3776e 7701 ros-jazzy-osqp_0-2026.07.14.09.37_amd64.buildinfo
+ 46a5b57ae5025c69bb3b7bc3ae06ba5969c36f5f6d29fb01b821855f8534064c 152908 ros-jazzy-osqp_0-2026.07.14.09.37_amd64.deb
+Files:
+ 1a3787709219f7468308890478f83b6b 174820 debug optional ros-jazzy-osqp-dbgsym_0-2026.07.14.09.37_amd64.ddeb
+ 50e608be90cabb305fd5ce4cff99772d 7701 misc optional ros-jazzy-osqp_0-2026.07.14.09.37_amd64.buildinfo
+ 8124dcb0f79f596d4b16409dc1042977 152908 misc optional ros-jazzy-osqp_0-2026.07.14.09.37_amd64.deb
+
++------------------------------------------------------------------------------+
+| Buildinfo                                    Tue, 14 Jul 2026 09:38:28 +0000 |
++------------------------------------------------------------------------------+
+
+Format: 1.0
+Source: ros-jazzy-osqp
+Binary: ros-jazzy-osqp ros-jazzy-osqp-dbgsym
+Architecture: amd64
+Version: 0-2026.07.14.09.37
+Checksums-Md5:
+ 1a3787709219f7468308890478f83b6b 174820 ros-jazzy-osqp-dbgsym_0-2026.07.14.09.37_amd64.ddeb
+ 8124dcb0f79f596d4b16409dc1042977 152908 ros-jazzy-osqp_0-2026.07.14.09.37_amd64.deb
+Checksums-Sha1:
+ 61ed3f1253af6275aa6306eb2c7097449c452e2c 174820 ros-jazzy-osqp-dbgsym_0-2026.07.14.09.37_amd64.ddeb
+ 5ac000603976cbf85ed5a1e7b4828826e3153aae 152908 ros-jazzy-osqp_0-2026.07.14.09.37_amd64.deb
+Checksums-Sha256:
+ 7a609a22103ada7083cefbe5084f854d7636bc9676cc74bd3cdadee1df05a15c 174820 ros-jazzy-osqp-dbgsym_0-2026.07.14.09.37_amd64.ddeb
+ 46a5b57ae5025c69bb3b7bc3ae06ba5969c36f5f6d29fb01b821855f8534064c 152908 ros-jazzy-osqp_0-2026.07.14.09.37_amd64.deb
+Build-Origin: Ubuntu
+Build-Architecture: amd64
+Build-Date: Tue, 14 Jul 2026 09:38:27 +0000
+Build-Path: /<<BUILDDIR>>package
+Build-Tainted-By:
+ merged-usr-via-aliased-dirs
+Installed-Build-Depends:
+ autoconf (= 2.71-3),
+ automake (= 1:1.16.5-1.3ubuntu1),
+ autopoint (= 0.21-14ubuntu2),
+ autotools-dev (= 20220109.1),
+ base-files (= 13ubuntu10.4),
+ base-passwd (= 3.6.3build1),
+ bash (= 5.2.21-2ubuntu4),
+ binutils (= 2.42-4ubuntu2.10),
+ binutils-common (= 2.42-4ubuntu2.10),
+ binutils-x86-64-linux-gnu (= 2.42-4ubuntu2.10),
+ bsdextrautils (= 2.39.3-9ubuntu6.5),
+ bsdutils (= 1:2.39.3-9ubuntu6.5),
+ build-essential (= 12.10ubuntu1),
+ bzip2 (= 1.0.8-5.1build0.1),
+ cmake (= 3.28.3-1build7),
+ cmake-data (= 3.28.3-1build7),
+ coreutils (= 9.4-3ubuntu6.2),
+ cpp (= 4:13.2.0-7ubuntu1),
+ cpp-13 (= 13.3.0-6ubuntu2~24.04.1),
+ cpp-13-x86-64-linux-gnu (= 13.3.0-6ubuntu2~24.04.1),
+ cpp-x86-64-linux-gnu (= 4:13.2.0-7ubuntu1),
+ dash (= 0.5.12-6ubuntu5),
+ debconf (= 1.5.86ubuntu1),
+ debhelper (= 13.14.1ubuntu5),
+ debianutils (= 5.17build1),
+ debugedit (= 1:5.0-5build2),
+ dh-autoreconf (= 20),
+ dh-strip-nondeterminism (= 1.13.1-1),
+ diffutils (= 1:3.10-1build1),
+ dpkg (= 1.22.6ubuntu6.6),
+ dpkg-dev (= 1.22.6ubuntu6.6),
+ dwz (= 0.15-1build6),
+ file (= 1:5.45-3build1),
+ findutils (= 4.9.0-5build1),
+ g++ (= 4:13.2.0-7ubuntu1),
+ g++-13 (= 13.3.0-6ubuntu2~24.04.1),
+ g++-13-x86-64-linux-gnu (= 13.3.0-6ubuntu2~24.04.1),
+ g++-x86-64-linux-gnu (= 4:13.2.0-7ubuntu1),
+ gcc (= 4:13.2.0-7ubuntu1),
+ gcc-13 (= 13.3.0-6ubuntu2~24.04.1),
+ gcc-13-base (= 13.3.0-6ubuntu2~24.04.1),
+ gcc-13-x86-64-linux-gnu (= 13.3.0-6ubuntu2~24.04.1),
+ gcc-14-base (= 14.2.0-4ubuntu2~24.04.1),
+ gcc-x86-64-linux-gnu (= 4:13.2.0-7ubuntu1),
+ gettext (= 0.21-14ubuntu2),
+ gettext-base (= 0.21-14ubuntu2),
+ git (= 1:2.43.0-1ubuntu7.3),
+ git-man (= 1:2.43.0-1ubuntu7.3),
+ grep (= 3.11-4build1),
+ groff-base (= 1.23.0-3build2),
+ gzip (= 1.12-1ubuntu3.2),
+ hostname (= 3.23+nmu2ubuntu2),
+ init-system-helpers (= 1.66ubuntu1),
+ intltool-debian (= 0.35.0+20060710.6),
+ libacl1 (= 2.3.2-1build1.1),
+ libarchive-zip-perl (= 1.68-1),
+ libarchive13t64 (= 3.7.2-2ubuntu0.7),
+ libasan8 (= 14.2.0-4ubuntu2~24.04.1),
+ libatomic1 (= 14.2.0-4ubuntu2~24.04.1),
+ libattr1 (= 1:2.5.2-1build1.1),
+ libaudit-common (= 1:3.1.2-2.1build1.1),
+ libaudit1 (= 1:3.1.2-2.1build1.1),
+ libbinutils (= 2.42-4ubuntu2.10),
+ libblkid1 (= 2.39.3-9ubuntu6.5),
+ libbrotli1 (= 1.1.0-2build2),
+ libbz2-1.0 (= 1.0.8-5.1build0.1),
+ libc-bin (= 2.39-0ubuntu8.7),
+ libc-dev-bin (= 2.39-0ubuntu8.7),
+ libc6 (= 2.39-0ubuntu8.7),
+ libc6-dev (= 2.39-0ubuntu8.7),
+ libcap-ng0 (= 0.8.4-2build2),
+ libcap2 (= 1:2.66-5ubuntu2.4),
+ libcc1-0 (= 14.2.0-4ubuntu2~24.04.1),
+ libcom-err2 (= 1.47.0-2.4~exp1ubuntu4.1),
+ libcrypt-dev (= 1:4.4.36-4build1),
+ libcrypt1 (= 1:4.4.36-4build1),
+ libctf-nobfd0 (= 2.42-4ubuntu2.10),
+ libctf0 (= 2.42-4ubuntu2.10),
+ libcurl3t64-gnutls (= 8.5.0-2ubuntu10.11),
+ libcurl4t64 (= 8.5.0-2ubuntu10.11),
+ libdb5.3t64 (= 5.3.28+dfsg2-7),
+ libdebconfclient0 (= 0.271ubuntu3),
+ libdebhelper-perl (= 13.14.1ubuntu5),
+ libdpkg-perl (= 1.22.6ubuntu6.6),
+ libdw1t64 (= 0.190-1.1ubuntu0.1),
+ libelf1t64 (= 0.190-1.1ubuntu0.1),
+ liberror-perl (= 0.17029-2),
+ libexpat1 (= 2.6.1-2ubuntu0.4),
+ libffi8 (= 3.4.6-1build1),
+ libfile-stripnondeterminism-perl (= 1.13.1-1),
+ libgcc-13-dev (= 13.3.0-6ubuntu2~24.04.1),
+ libgcc-s1 (= 14.2.0-4ubuntu2~24.04.1),
+ libgcrypt20 (= 1.10.3-2ubuntu0.1),
+ libgdbm-compat4t64 (= 1.23-5.1build1),
+ libgdbm6t64 (= 1.23-5.1build1),
+ libgmp10 (= 2:6.3.0+dfsg-2ubuntu6.1),
+ libgnutls30t64 (= 3.8.3-1.1ubuntu3.6),
+ libgomp1 (= 14.2.0-4ubuntu2~24.04.1),
+ libgpg-error0 (= 1.47-3build2.1),
+ libgprofng0 (= 2.42-4ubuntu2.10),
+ libgssapi-krb5-2 (= 1.20.1-6ubuntu2.6),
+ libhogweed6t64 (= 3.9.1-2.2build1.1),
+ libhwasan0 (= 14.2.0-4ubuntu2~24.04.1),
+ libicu74 (= 74.2-1ubuntu3.1),
+ libidn2-0 (= 2.3.7-2build1.1),
+ libisl23 (= 0.26-3build1.1),
+ libitm1 (= 14.2.0-4ubuntu2~24.04.1),
+ libjansson4 (= 2.14-2build2),
+ libjsoncpp25 (= 1.9.5-6build1),
+ libk5crypto3 (= 1.20.1-6ubuntu2.6),
+ libkeyutils1 (= 1.6.3-3build1),
+ libkrb5-3 (= 1.20.1-6ubuntu2.6),
+ libkrb5support0 (= 1.20.1-6ubuntu2.6),
+ libldap2 (= 2.6.10+dfsg-0ubuntu0.24.04.1),
+ liblsan0 (= 14.2.0-4ubuntu2~24.04.1),
+ liblz4-1 (= 1.9.4-1build1.1),
+ liblzma5 (= 5.6.1+really5.4.5-1ubuntu0.3),
+ libmagic-mgc (= 1:5.45-3build1),
+ libmagic1t64 (= 1:5.45-3build1),
+ libmd0 (= 1.1.0-2build1.1),
+ libmount1 (= 2.39.3-9ubuntu6.5),
+ libmpc3 (= 1.3.1-1build1.1),
+ libmpfr6 (= 4.2.1-1build1.1),
+ libncursesw6 (= 6.4+20240113-1ubuntu2.1),
+ libnettle8t64 (= 3.9.1-2.2build1.1),
+ libnghttp2-14 (= 1.59.0-1ubuntu0.4),
+ libp11-kit0 (= 0.25.3-4ubuntu2.1),
+ libpam-modules (= 1.5.3-5ubuntu5.5),
+ libpam-modules-bin (= 1.5.3-5ubuntu5.5),
+ libpam-runtime (= 1.5.3-5ubuntu5.5),
+ libpam0g (= 1.5.3-5ubuntu5.5),
+ libpcre2-8-0 (= 10.42-4ubuntu2.1),
+ libperl5.38t64 (= 5.38.2-3.2ubuntu0.3),
+ libpipeline1 (= 1.5.7-2),
+ libproc2-0 (= 2:4.0.4-4ubuntu3.2),
+ libpsl5t64 (= 0.21.2-1.1build1),
+ libquadmath0 (= 14.2.0-4ubuntu2~24.04.1),
+ librhash0 (= 1.4.3-3build1),
+ librtmp1 (= 2.4+20151223.gitfa8646d.1-2build7),
+ libsasl2-2 (= 2.1.28+dfsg1-5ubuntu3.1),
+ libsasl2-modules-db (= 2.1.28+dfsg1-5ubuntu3.1),
+ libseccomp2 (= 2.5.5-1ubuntu3.1),
+ libselinux1 (= 3.5-2ubuntu2.1),
+ libsframe1 (= 2.42-4ubuntu2.10),
+ libsmartcols1 (= 2.39.3-9ubuntu6.5),
+ libssh-4 (= 0.10.6-2ubuntu0.4),
+ libssl3t64 (= 3.0.13-0ubuntu3.11),
+ libstdc++-13-dev (= 13.3.0-6ubuntu2~24.04.1),
+ libstdc++6 (= 14.2.0-4ubuntu2~24.04.1),
+ libsub-override-perl (= 0.10-1),
+ libsystemd0 (= 255.4-1ubuntu8.16),
+ libtasn1-6 (= 4.19.0-3ubuntu0.24.04.2),
+ libtinfo6 (= 6.4+20240113-1ubuntu2.1),
+ libtool (= 2.4.7-7build1),
+ libtsan2 (= 14.2.0-4ubuntu2~24.04.1),
+ libubsan1 (= 14.2.0-4ubuntu2~24.04.1),
+ libuchardet0 (= 0.0.8-1build1),
+ libudev1 (= 255.4-1ubuntu8.16),
+ libunistring5 (= 1.1-2build1.1),
+ libuuid1 (= 2.39.3-9ubuntu6.5),
+ libuv1t64 (= 1.48.0-1.1build1),
+ libxml2 (= 2.9.14+dfsg-1.3ubuntu3.8),
+ libzstd1 (= 1.5.5+dfsg2-2build1.1),
+ linux-libc-dev (= 6.8.0-134.134),
+ login (= 1:4.13+dfsg1-4ubuntu3.2),
+ lto-disabled-list (= 47),
+ m4 (= 1.4.19-4build1),
+ make (= 4.3-4.1build2),
+ man-db (= 2.12.0-4build2),
+ mawk (= 1.3.4.20240123-1build1),
+ ncurses-base (= 6.4+20240113-1ubuntu2.1),
+ ncurses-bin (= 6.4+20240113-1ubuntu2.1),
+ patch (= 2.7.6-7build3),
+ perl (= 5.38.2-3.2ubuntu0.3),
+ perl-base (= 5.38.2-3.2ubuntu0.3),
+ perl-modules-5.38 (= 5.38.2-3.2ubuntu0.3),
+ po-debconf (= 1.0.21+nmu1),
+ procps (= 2:4.0.4-4ubuntu3.2),
+ rpcsvc-proto (= 1.4.2-0ubuntu7),
+ sed (= 4.9-2ubuntu0.24.04.1),
+ sensible-utils (= 0.0.22),
+ sysvinit-utils (= 3.08-6ubuntu3),
+ tar (= 1.35+dfsg-3ubuntu0.2),
+ util-linux (= 2.39.3-9ubuntu6.5),
+ xz-utils (= 5.6.1+really5.4.5-1ubuntu0.3),
+ zlib1g (= 1:1.3.dfsg-3.1ubuntu2.1)
+Environment:
+ DEB_BUILD_OPTIONS="nocheck parallel=4"
+ DEB_BUILD_PROFILES="noudeb"
+ LANG="C.UTF-8"
+ LC_ALL="C.UTF-8"
+ LC_COLLATE="C.UTF-8"
+ SOURCE_DATE_EPOCH="1784021870"
+
+
++------------------------------------------------------------------------------+
+| Package contents                             Tue, 14 Jul 2026 09:38:28 +0000 |
++------------------------------------------------------------------------------+
+
+
+ros-jazzy-osqp_0-2026.07.14.09.37_amd64.deb
+-------------------------------------------
+
+ new Debian package, version 2.0.
+ size 152908 bytes: control archive=1869 bytes.
+     276 bytes,    10 lines      control
+    5383 bytes,    59 lines      md5sums
+ Package: ros-jazzy-osqp
+ Version: 0-2026.07.14.09.37
+ Architecture: amd64
+ Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+ Installed-Size: 848
+ Depends: libc6 (>= 2.38)
+ Section: misc
+ Priority: optional
+ Homepage: https://osqp.org
+ Description: The Operator Splitting QP Solver
+
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./opt/
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./opt/ros/
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./opt/ros/jazzy/
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./opt/ros/jazzy/include/
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./opt/ros/jazzy/include/osqp/
+-rw-r--r-- root/root       236 2026-07-14 09:36 ./opt/ros/jazzy/include/osqp/osqp.h
+-rw-r--r-- root/root      7354 2026-07-14 09:36 ./opt/ros/jazzy/include/osqp/osqp_api_constants.h
+-rw-r--r-- root/root     17302 2026-07-14 09:36 ./opt/ros/jazzy/include/osqp/osqp_api_functions.h
+-rw-r--r-- root/root      7933 2026-07-14 09:36 ./opt/ros/jazzy/include/osqp/osqp_api_types.h
+-rw-r--r-- root/root      1196 2026-07-14 09:37 ./opt/ros/jazzy/include/osqp/osqp_configure.h
+-rw-r--r-- root/root       713 2026-07-14 09:36 ./opt/ros/jazzy/include/osqp/osqp_export_define.h
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./opt/ros/jazzy/include/qdldl/
+-rw-r--r-- root/root      7622 2026-07-14 09:37 ./opt/ros/jazzy/include/qdldl/qdldl.h
+-rw-r--r-- root/root      1722 2026-07-14 09:37 ./opt/ros/jazzy/include/qdldl/qdldl_types.h
+-rw-r--r-- root/root      1172 2026-07-14 09:37 ./opt/ros/jazzy/include/qdldl/qdldl_version.h
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./opt/ros/jazzy/lib/
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./opt/ros/jazzy/lib/x86_64-linux-gnu/
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./opt/ros/jazzy/lib/x86_64-linux-gnu/cmake/
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./opt/ros/jazzy/lib/x86_64-linux-gnu/cmake/osqp/
+-rw-r--r-- root/root      2762 2026-07-14 09:37 ./opt/ros/jazzy/lib/x86_64-linux-gnu/cmake/osqp/osqp-config-version.cmake
+-rw-r--r-- root/root      1647 2026-07-14 09:37 ./opt/ros/jazzy/lib/x86_64-linux-gnu/cmake/osqp/osqp-config.cmake
+-rw-r--r-- root/root       829 2026-07-14 09:37 ./opt/ros/jazzy/lib/x86_64-linux-gnu/cmake/osqp/osqp-targets-none.cmake
+-rw-r--r-- root/root      4000 2026-07-14 09:37 ./opt/ros/jazzy/lib/x86_64-linux-gnu/cmake/osqp/osqp-targets.cmake
+-rw-r--r-- root/root       878 2026-07-14 09:37 ./opt/ros/jazzy/lib/x86_64-linux-gnu/cmake/osqp/osqpstatic-targets-none.cmake
+-rw-r--r-- root/root      3980 2026-07-14 09:37 ./opt/ros/jazzy/lib/x86_64-linux-gnu/cmake/osqp/osqpstatic-targets.cmake
+-rw-r--r-- root/root    159656 2026-07-14 09:37 ./opt/ros/jazzy/lib/x86_64-linux-gnu/libosqp.so
+-rw-r--r-- root/root    268720 2026-07-14 09:37 ./opt/ros/jazzy/lib/x86_64-linux-gnu/libosqpstatic.a
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./opt/ros/jazzy/share/
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/
+-rw-r--r-- root/root      1024 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/Makefile
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/
+-rw-r--r-- root/root       997 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/algebra_impl.h
+-rw-r--r-- root/root      4523 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/algebra_matrix.h
+-rw-r--r-- root/root     10745 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/algebra_vector.h
+-rw-r--r-- root/root      5072 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/auxil.h
+-rw-r--r-- root/root      2977 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/csc_math.h
+-rw-r--r-- root/root      6414 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/csc_utils.h
+-rw-r--r-- root/root      1292 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/error.h
+-rw-r--r-- root/root      1676 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/glob_opts.h
+-rw-r--r-- root/root      3455 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/kkt.h
+-rw-r--r-- root/root      2746 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/lin_alg.h
+-rw-r--r-- root/root      1349 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/printing.h
+-rw-r--r-- root/root      3861 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/profilers.h
+-rw-r--r-- root/root      7622 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/qdldl.h
+-rw-r--r-- root/root      7004 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/qdldl_interface.h
+-rw-r--r-- root/root       802 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/qdldl_types.h
+-rw-r--r-- root/root      1172 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/qdldl_version.h
+-rw-r--r-- root/root      1141 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/scaling.h
+-rw-r--r-- root/root       660 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/timing.h
+-rw-r--r-- root/root      8850 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/types.h
+-rw-r--r-- root/root      2884 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/util.h
+-rw-r--r-- root/root       182 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/private/version.h
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/public/
+-rw-r--r-- root/root       236 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/public/osqp.h
+-rw-r--r-- root/root      7354 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/public/osqp_api_constants.h
+-rw-r--r-- root/root     17302 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/public/osqp_api_functions.h
+-rw-r--r-- root/root      7933 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/public/osqp_api_types.h
+-rw-r--r-- root/root       713 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/inc/public/osqp_export_define.h
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/src/
+-rw-r--r-- root/root      2829 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/src/algebra_libs.c
+-rw-r--r-- root/root     36984 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/src/auxil.c
+-rw-r--r-- root/root      9226 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/src/csc_math.c
+-rw-r--r-- root/root     17524 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/src/csc_utils.c
+-rw-r--r-- root/root      1513 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/src/error.c
+-rw-r--r-- root/root     12727 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/src/kkt.c
+-rw-r--r-- root/root      6691 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/src/matrix.c
+-rw-r--r-- root/root     52373 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/src/osqp_api.c
+-rw-r--r-- root/root      9432 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/src/qdldl.c
+-rw-r--r-- root/root     27392 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/src/qdldl_interface.c
+-rw-r--r-- root/root      6052 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/src/scaling.c
+-rw-r--r-- root/root     13336 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/src/util.c
+-rw-r--r-- root/root     22196 2026-07-14 09:37 ./opt/ros/jazzy/share/osqp/codegen_files/src/vector.c
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./usr/
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./usr/share/
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./usr/share/doc/
+drwxr-xr-x root/root         0 2026-07-14 09:37 ./usr/share/doc/ros-jazzy-osqp/
+-rw-r--r-- root/root       191 2026-07-14 09:37 ./usr/share/doc/ros-jazzy-osqp/changelog.Debian.gz
+-rw-r--r-- root/root       280 2026-07-14 09:37 ./usr/share/doc/ros-jazzy-osqp/copyright
+
+
++------------------------------------------------------------------------------+
+| Post Build                                   Tue, 14 Jul 2026 09:38:29 +0000 |
++------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+| Cleanup                                      Tue, 14 Jul 2026 09:38:29 +0000 |
++------------------------------------------------------------------------------+
+
+Purging /<<BUILDDIR>>
+Not cleaning session: cloned chroot in use
+
++------------------------------------------------------------------------------+
+| Summary                                      Tue, 14 Jul 2026 09:38:30 +0000 |
++------------------------------------------------------------------------------+
+
+Build Architecture: amd64
+Build Type: binary
+Build-Space: 23308
+Build-Time: 12
+Distribution: noble
+Host Architecture: amd64
+Install-Time: 11
+Job: /home/runner/work/osqp/osqp/ros-jazzy-osqp_0-2026.07.14.09.37.dsc
+Machine Architecture: amd64
+Package: ros-jazzy-osqp
+Package-Time: 35
+Source-Version: 0-2026.07.14.09.37
+Space: 23308
+Status: successful
+Version: 0-2026.07.14.09.37
+--------------------------------------------------------------------------------
+Finished at 2026-07-14T09:38:27Z
+Build needed 00:00:35, 23308k disk space

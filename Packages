@@ -1,0 +1,37 @@
+Package: ros-lyrical-osqp-dbgsym
+Package-Type: ddeb
+Architecture: amd64
+Version: 0-2026.07.14.09.37
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: ros-lyrical-osqp
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 242
+Depends: ros-lyrical-osqp (= 0-2026.07.14.09.37)
+Filename: ./ros-lyrical-osqp-dbgsym_0-2026.07.14.09.37_amd64.ddeb
+Size: 175442
+MD5sum: 7dd8368a672cd707e459bca73d4a83df
+SHA1: 979d7239c4b8101fbdfc64816a63beb11eaefdd3
+SHA256: c94093b412a38d25309c566bd7a17f5905f36f31ae7ee33498cb99fe7c2e7a1d
+SHA512: 073ba6de63bcbbb76390240dd494a4a05735933258f8296eb409cd60cf7e74d36bb8b592c13c7f839ff8bf3723595fbb0fed7722bfbedce5d0611de36f703502
+Description: debug symbols for ros-lyrical-osqp
+Build-Ids: 0b599531703cb0846496553eee543f073da95bd8
+
+Package: ros-lyrical-osqp
+Architecture: amd64
+Version: 0-2026.07.14.09.37
+Priority: optional
+Section: misc
+Maintainer: Christian Rauch <Rauch.Christian@gmx.de>
+Installed-Size: 859
+Depends: libc6 (>= 2.38)
+Filename: ./ros-lyrical-osqp_0-2026.07.14.09.37_amd64.deb
+Size: 152374
+MD5sum: 94a2aa1799943a148abdb5d563cd44aa
+SHA1: 3156aad46302e214ea6918f72e6cf3342c5352e9
+SHA256: ba679736d5d8852f6d408fbd2bd4792403d4229470311c74c30890ef20882871
+SHA512: b0182ca4082135640a65e2cedb6fa9580ba8d25d8cb6f684c35b317dae4b2cddb422e317c17d47ec4d9e7e189e8b4864b98f786188e293a5fe5c9ff5beb69ca6
+Homepage: https://osqp.org
+Description: The Operator Splitting QP Solver
+
